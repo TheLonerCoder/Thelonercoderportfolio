@@ -20,7 +20,7 @@ ul li svg:hover {
 
 button {
   background-color: #2d9bf5;
-  margin-right: 5px;
+  margin-right: 10px;
   border: 0;
   padding: 10px 20px;
   color: white;
@@ -31,13 +31,23 @@ button {
   background-color: #0b82e4;
 }
 
+#emailBtn svg, #projectBtn svg {
+  margin-right: 5px;
+}
+
 #resumeBtn {
   background-color: black;
   border: solid white 1px;
+  -webkit-box-shadow: 0px 0px 5px #2d9bf5;
+          box-shadow: 0px 0px 5px #2d9bf5;
 }
 
 #resumeBtn:hover {
   border: solid #2d9bf5 1px;
   color: #2d9bf5;
+}
+
+#resumeBtn svg {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=home.css.map */

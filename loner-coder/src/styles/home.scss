@@ -36,7 +36,7 @@ ul {
 button {
 
     background-color: $mainColor;
-    margin-right: 5px;
+    margin-right: 10px;
     border: 0;
     padding: 10px 20px;
     color: white;
@@ -53,12 +53,21 @@ button {
     
     &:hover {
         background-color: darken($color: $mainColor, $amount: 10);
+        // box-shadow: 5px 5px 5px $mainColor;
+        
     }    
+
+
+    svg {
+        margin-right: 5px;
+    }
 }
+
 
 #resumeBtn {
     background-color: rgba($color: #000000, $alpha: 1.0);
     border: solid white 1px;
+    box-shadow: 0px 0px 5px $mainColor;
 
 
 
@@ -66,5 +75,11 @@ button {
         border: solid $mainColor 1px;
         color: $mainColor;
     }    
+
+
+
+    svg {
+        margin-right: 5px;
+    }
 }
 

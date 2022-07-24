@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/home.css';
 import '../styles/website.css'
-import {FaGithub, FaYoutube, FaTwitter, FaLinkedinIn} from 'react-icons/fa';
+import {FaGithub, FaYoutube, FaTwitter, FaLinkedinIn, FaDownload, FaMailBulk, FaProjectDiagram} from 'react-icons/fa';
+import Journey from './journey';
 
 
 
@@ -24,10 +25,12 @@ function Home() {
                 <li><a href=""><FaLinkedinIn /></a></li>
             </ul>
 
-            <button id='emailBtn'>Email Me</button>
-            <button id='resumeBtn'>Resume</button>
-            <button id='projectBtn'>Projects</button>
+            <button id='emailBtn'><FaMailBulk />Email Me</button>
+            <button id='resumeBtn'><FaDownload />Resume</button>
+            <button id='projectBtn'><FaProjectDiagram />Projects</button>
         </article>
+
+        <Journey />
     </div>
   )
 }
