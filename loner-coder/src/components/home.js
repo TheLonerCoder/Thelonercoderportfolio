@@ -3,6 +3,7 @@ import '../styles/home.css';
 import '../styles/website.css'
 import {FaGithub, FaYoutube, FaTwitter, FaLinkedinIn, FaDownload, FaMailBulk, FaProjectDiagram} from 'react-icons/fa';
 import Journey from './journey';
+import HomeProjects from './homeProjects';
 
 
 
@@ -30,6 +31,8 @@ function Home() {
             <button id='projectBtn'><FaProjectDiagram />Projects</button>
         </article>
 
+
+        <HomeProjects />
         <Journey />
     </div>
   )
