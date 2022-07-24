@@ -13,6 +13,9 @@ import ErrorPage from './pages/error';
 
 
 
+
+
+
 function Navbar () {
     return (
         // <ul className="navbar">
@@ -21,23 +24,39 @@ function Navbar () {
         //     <li><a href=''>Portfolio</a></li>
         // </ul>
 
+
+
         <Router>
 
             <nav>
                 <Link to='/'>Home</Link>
                 <Link to='/journey'>Journey</Link>
                 <Link to='/portfolio'>Portfolio</Link>
+                {/* {profileArray.map(item => {
+                    return (<Link to='/portfolio/:{item}'>{item}</Link>)
+                })} */}
             </nav>
 
             <Routes>
                 <Route path='/' element={<Home />}/>
                 <Route path='/journey' element={<Journey/ >}/>
                 <Route path='/portfolio' element={<Portfolio />}/>
+                <Route path='/portfolio' element={<Portfolio />}/>
                 <Route path='*' element={<ErrorPage />}/>
+                {/* {profileArray.map(item => {
+                    return (<Route path='/por' element={<Portfolio/>}>{item}</Route>)
+                })} */}
             </Routes>
 
 
-            <footer>Boiletplate</footer>
+            <footer>
+            Boilerplate
+            
+            </footer>
+            {/* <div>{testProfile.one}</div>
+
+            
+            <div>{Object.keys(testProfile).length}</div> */}
         </Router>
 
     )
