@@ -6,10 +6,10 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Home from './pages/home';
-import Journey from './pages/journey';
-import Portfolio from './pages/portfolio';
-import ErrorPage from './pages/error';
+import Home from './home';
+import Journey from './journey';
+import Portfolio from './portfolio';
+import ErrorPage from './error';
 
 
 

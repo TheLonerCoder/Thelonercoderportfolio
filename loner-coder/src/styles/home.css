@@ -1,0 +1,31 @@
+ul li {
+  list-style: none;
+}
+
+ul li svg {
+  fill: white;
+}
+
+button {
+  background-color: #2d9bf5;
+  margin-right: 5px;
+  border: 0;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 4px;
+}
+
+#emailBtn:hover, #projectBtn:hover {
+  background-color: #0b82e4;
+}
+
+#resumeBtn {
+  background-color: black;
+  border: solid white 1px;
+}
+
+#resumeBtn:hover {
+  border: solid #2d9bf5 1px;
+  color: #2d9bf5;
+}
+/*# sourceMappingURL=home.css.map */
