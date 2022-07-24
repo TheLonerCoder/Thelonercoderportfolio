@@ -1,9 +1,21 @@
+#name {
+  color: #2d9bf5;
+}
+
 ul li {
   list-style: none;
+  display: inline;
+  margin-right: 8px;
 }
 
 ul li svg {
   fill: white;
+}
+
+ul li svg:hover {
+  fill: #2d9bf5;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 button {

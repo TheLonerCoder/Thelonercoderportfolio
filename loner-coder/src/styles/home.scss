@@ -1,17 +1,27 @@
 @import './Variables.scss';
 
 
+#name {
+    color: $mainColor;
+}
+
 
 
 ul {
 
     li {
         list-style: none;
-
+        display: inline;
+        margin-right: 8px;
 
 
         svg {
             fill: white;
+
+            &:hover{
+                fill: $mainColor;
+                transform: scale(1.5);
+            }
         }
     }
 
