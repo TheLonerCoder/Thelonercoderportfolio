@@ -12,11 +12,11 @@ function Home() {
   return (
     <div>
         <header>
-            <h2>Hello! i'm <span id="name">Stephon Stokley</span></h2> 
+            <h1>Hello! i'm <span id="name">Stephon Stokley</span></h1> 
             <h4>I'm a Web Developer|</h4>
         </header>
 
-        <article>
+        <article id='aboutMe'>
             <p>I'm a React-focused Web Developer (MERN-Stack) with some experience in Python. My projects are passion-focued, pertaining to exoplanets/space, entrepreneurship, learning languages, and music.</p>
             
             <ul>

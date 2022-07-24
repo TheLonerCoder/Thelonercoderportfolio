@@ -2,6 +2,10 @@
   color: #2d9bf5;
 }
 
+#aboutMe {
+  margin-bottom: 50px;
+}
+
 ul li {
   list-style: none;
   display: inline;
@@ -20,7 +24,7 @@ ul li svg:hover {
 
 button {
   background-color: #2d9bf5;
-  margin-right: 10px;
+  margin-right: 12px;
   border: 0;
   padding: 10px 20px;
   color: white;
