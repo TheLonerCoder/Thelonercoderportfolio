@@ -1,8 +1,13 @@
 import React from 'react'
+import Projects from './projects'
+
+
 
 function Portfolio() {
   return (
-    <div>Portfolio</div>
+    <div>
+      <Projects />
+    </div>
   )
 }
 

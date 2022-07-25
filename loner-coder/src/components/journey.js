@@ -8,7 +8,7 @@ import { SiUdemy, SiYoutube } from "react-icons/si";
 
 function Journey() {
   return (
-    <div>
+    <div id='ExperienceContainer'>
       <h2>My Experiences</h2>
       <article id='journeySection'>
 

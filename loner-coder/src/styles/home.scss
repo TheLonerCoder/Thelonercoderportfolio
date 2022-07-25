@@ -70,6 +70,14 @@ button {
 
 #emailBtn, #projectBtn  {
     
+    background-color: $mainColor;
+    margin-right: 12px;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+
+
     &:hover {
         background-color: darken($color: $mainColor, $amount: 10);
         // box-shadow: 5px 5px 5px $mainColor;
@@ -84,19 +92,53 @@ button {
 
 
 #resumeBtn {
+
     background-color: rgba($color: #000000, $alpha: 1.0);
     border: solid white 1px;
     box-shadow: 0px 0px 5px $mainColor;
 
 
-
+    
+    
     &:hover {
         border: solid $mainColor 1px;
         color: $mainColor;
         cursor: pointer;
-
+        
     }    
+    
+    
+    
+    svg {
+        margin-right: 5px;
+    }
+}
 
+
+// ? Links
+
+
+#socialLinks {
+    margin-bottom: 40px;
+}
+
+
+#emailBtns, #projectBtns  {
+    
+    background-color: $mainColor;
+    margin-right: 12px;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+
+
+    &:hover {
+        background-color: darken($color: $mainColor, $amount: 10);
+        // box-shadow: 5px 5px 5px $mainColor;
+        cursor: pointer;
+    }    
 
 
     svg {
@@ -104,6 +146,29 @@ button {
     }
 }
 
+
+#resume {
+    margin-right: 12px;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba($color: #000000, $alpha: 1.0);
+    border: solid white 1px;
+    box-shadow: 0px 0px 5px $mainColor;
+    text-decoration: none;
+    font-size: 14px;
+
+
+        &:hover {
+            border: solid $mainColor 1px;
+            color: $mainColor;
+        }
+
+    svg {
+        margin-right: 5px;
+    }
+}
 
 
 
@@ -174,3 +239,15 @@ button {
 
 
 
+
+
+
+// ! Media Queries
+
+
+@media (min-width: 1136px) {
+
+    #ExperienceContainer {
+        padding: 0px 5%;
+    }
+}

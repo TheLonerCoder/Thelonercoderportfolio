@@ -39,16 +39,20 @@ function Home() {
         <article id='aboutMe'>
             <p>I'm a React-focused Web Developer (MERN-Stack) with some experience in Python. My projects are passion-focued, pertaining to exoplanets/space, entrepreneurship, learning languages, and music.</p>
             
-            <ul>
+            <ul id='socialLinks'>
                 <li><a href=""><FaGithub /></a></li>
                 <li><a href=""><FaYoutube /></a></li>
                 <li><a href=""><FaTwitter /></a></li>
                 <li><a href=""><FaLinkedinIn /></a></li>
             </ul>
 
-            <button id='emailBtn'><FaMailBulk />Email Me</button>
-            <button id='resumeBtn'><FaDownload />Resume</button>
-            <button id='projectBtn'><FaProjectDiagram />Projects</button>
+            {/* <button id='emailBtn'><FaMailBulk />Email Me</button>
+            <button id='resumeBtn' download={'imgs/im-here.png'}><FaDownload />Resume</button>
+            <button id='projectBtn'><FaProjectDiagram />Projects</button> */}
+
+            <a id='emailBtns'><FaMailBulk />Email Me</a>
+            <a href="imgs/im-here.png" download id='resume'><FaDownload />Resume</a>
+            <a id='projectBtns'><FaProjectDiagram />Projects</a>
         </article>
 
 

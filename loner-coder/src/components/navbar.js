@@ -30,7 +30,7 @@ function Navbar () {
 
             <nav>
                 <Link to='/'>Home</Link>
-                <Link to='/journey'>Journey</Link>
+                {/* <Link to='/journey'>Journey</Link> */}
                 <Link to='/portfolio'>Portfolio</Link>
                 {/* {profileArray.map(item => {
                     return (<Link to='/portfolio/:{item}'>{item}</Link>)
@@ -39,8 +39,8 @@ function Navbar () {
 
             <Routes>
                 <Route path='/' element={<Home />}/>
-                <Route path='/journey' element={<Journey id='journey'/>}/>
-                <Route path='/portfolio' element={<Portfolio />}/>
+                {/* <Route path='/journey' element={<Journey id='journey'/>}/>
+                <Route path='/portfolio' element={<Portfolio />}/> */}
                 <Route path='/portfolio' element={<Portfolio />}/>
                 <Route path='*' element={<ErrorPage />}/>
                 {/* {profileArray.map(item => {

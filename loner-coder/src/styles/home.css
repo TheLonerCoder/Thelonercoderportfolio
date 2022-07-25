@@ -43,6 +43,15 @@ button {
   border-radius: 4px;
 }
 
+#emailBtn, #projectBtn {
+  background-color: #2d9bf5;
+  margin-right: 12px;
+  border: 0;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 4px;
+}
+
 #emailBtn:hover, #projectBtn:hover {
   background-color: #0b82e4;
   cursor: pointer;
@@ -66,6 +75,52 @@ button {
 }
 
 #resumeBtn svg {
+  margin-right: 5px;
+}
+
+#socialLinks {
+  margin-bottom: 40px;
+}
+
+#emailBtns, #projectBtns {
+  background-color: #2d9bf5;
+  margin-right: 12px;
+  border: 0;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#emailBtns:hover, #projectBtns:hover {
+  background-color: #0b82e4;
+  cursor: pointer;
+}
+
+#emailBtns svg, #projectBtns svg {
+  margin-right: 5px;
+}
+
+#resume {
+  margin-right: 12px;
+  border: 0;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 4px;
+  background-color: black;
+  border: solid white 1px;
+  -webkit-box-shadow: 0px 0px 5px #2d9bf5;
+          box-shadow: 0px 0px 5px #2d9bf5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#resume:hover {
+  border: solid #2d9bf5 1px;
+  color: #2d9bf5;
+}
+
+#resume svg {
   margin-right: 5px;
 }
 
@@ -123,5 +178,11 @@ button {
 #imHere:hover {
   -webkit-filter: none !important;
           filter: none !important;
+}
+
+@media (min-width: 1136px) {
+  #ExperienceContainer {
+    padding: 0px 5%;
+  }
 }
 /*# sourceMappingURL=home.css.map */
