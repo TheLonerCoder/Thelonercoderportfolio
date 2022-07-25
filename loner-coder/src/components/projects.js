@@ -1,65 +1,20 @@
 import React, {useState} from 'react';
 import '../styles/website.css';
+import { projectObject } from '../data/portfolio-data';
+import { DiBootstrap as Bootstrap, DiCss3 as Css, DiHtml5 as Html5, DiJsBadge as Javascript, DiPython as Python, DiSass as Sass, DiReact } from "react-icons/di";
 
 
-let projectObject = {
-    ftf : {
-        name: 'Forge The Fort',
-        logo: '',
-        gif: '',
-        description: 'A hub for connecting people in underserved/overlooked cities across the midwest. This hub connects innovators, investors, community leaders, civilians, politicians, etc all in one place to find solutions for their specific problems, connecting people from surrounding districts, counties, cities, and - even - states. The ultimate goal is to provide people with the tools and knowledge to build up their own cities here in the Midwest.',
-        tech: ['bootstrap', 'sass', 'javascript'],
-        founders: '',
-        concept: false
-
-    },
-
-    vrworld: {
-        name: 'VR World',
-        logo: '',
-        gif: '',
-        description: "A fake landing page for a VR-based company. This company specializes in VR and immersive technology and connects it's userbase to the metaverse.",
-        tech: ['', 'react', 'sass', 'javascript'],
-        founders: '',
-        concept: false
-
-    },
-
-    solo: {
-        name: 'Solo Innovations',
-        logo: '',
-        gif: '',
-        description: "A platform where you can become more aware of how learning a language opens up doors. It'll give resources to learn languages, show you where you can use them, etc.",
-        tech: ['react', 'bootstrap', 'sass', 'javascript'],
-        founders: '',
-        concept: false
-
-    },
-
-    worldla: {
-        name: 'Worldla',
-        logo: '',
-        gif: '',
-        description: "A platform where you can become more aware of how learning a language opens up doors. It'll give resources to learn languages, show you where you can use them, etc.",
-        tech: ['react', 'bootstrap', 'sass', 'javascript'],
-        founders: '',
-        concept: false
-
-    },
 
 
-    imhere: {
-        name: "I'm Here",
-        logo: '',
-        gif: '',
-        description: "A portal with both a student and teacher can log into and show they're in attendance in their class.",
-        tech: ['react', 'bootstrap', 'sass', 'javascript'],
-        founders: '',
-        concept: true
-
-    }
+let converter = {
+    bootstrap: <Bootstrap />,
+    sass: <Sass />,
+    css: <Css />,
+    react: <DiReact />,
+    html: <Html5 />,
+    javascript: <Javascript />,
+    python: <Python />
 }
-
 
 
 // console.log(projectObject)
@@ -73,6 +28,7 @@ function Projects() {
     const [techstack, settechstack] = useState();
 
 
+// ? Pulls external data from an Object and converts it to JSX
     function renderData (e) {
         // if (e.target.id === projectObject[e.target.id]) {
             
@@ -81,11 +37,30 @@ function Projects() {
 
         titleChange(projectObject[idNum].name);
         setdescription(projectObject[idNum].description);
-        settechstack(projectObject[idNum].tech);
+        // settechstack(projectObject[idNum].tech);
+        // console.log(projectObject[idNum].tech);
 
         // projectObject[idNum]
+        // iconConvert();
+
+
+
+        
+        // ? Converts the techstack data to imported Icon SVGs and the "converter" Object
+        settechstack((projectObject[idNum].tech).map(x => {
+            // console.log(`${converter[x]}`)
+           return converter[x];
+        }
+        ))
 
     }
+
+
+
+
+
+
+
 
 
   return (
@@ -97,11 +72,25 @@ function Projects() {
 
 
         <h1>{title}</h1>
-        <p>{description}</p>
+
+        <section>
+            <button id='demoBtn'>Live Demo</button>
+            <button id='codebaseBtn'>Code Base</button>
+        </section>
         
         <section>
+            <h2>About the Project</h2>
+            <p>{description}</p>
             <h2>Tech</h2>
-            <p>{techstack}</p>
+            {/* <p>{techstack}</p> */}
+            <p>
+                {/* {techstack.map(item => {
+                    return (<li>{item}</li>)
+                })} */}
+
+                {techstack}
+            </p>
+            <h2>Meet the Creators/Founders</h2>
         </section>
 
 
