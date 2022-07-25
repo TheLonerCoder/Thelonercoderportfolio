@@ -29,11 +29,66 @@
 .bar {
   background-color: grey;
   height: 5px;
+  width: 90%;
 }
 
-.bar .success {
+.bar .reactBar {
+  background-color: #ff2600;
+  height: 5px;
+  width: 90%;
+}
+
+.bar .javascriptBar {
+  background-color: #ff2600;
+  height: 5px;
+  width: 90%;
+}
+
+.bar .htmlBar {
+  background-color: #ff2600;
+  height: 5px;
+  width: 90%;
+}
+
+.bar .cssBar {
+  background-color: #ff7004;
+  height: 5px;
+  width: 75%;
+}
+
+.bar .sassBar {
+  background-color: #ff7004;
+  height: 5px;
+  width: 75%;
+}
+
+.bar .threeBar {
+  background-color: #ffd207;
+  height: 5px;
+  width: 25%;
+}
+
+.bar .nodeBar {
   background-color: orange;
   height: 5px;
-  width: 85%;
+  width: 25%;
+}
+
+.bar .expressBar {
+  background-color: orange;
+  height: 5px;
+  width: 25%;
+}
+
+.bar .pythonBar {
+  background-color: orange;
+  height: 5px;
+  width: 50%;
+}
+
+.bar .mongoBar {
+  background-color: orange;
+  height: 5px;
+  width: 25%;
 }
 /*# sourceMappingURL=journey.css.map */

@@ -1,3 +1,9 @@
+$orange1: rgb(255, 38, 0);
+$orange2: #ff7004;
+$orange3: orange;
+$orange4: rgb(255, 210, 7);
+
+
 #journeySection {
     background-color: lighten($color: #000000, $amount: 0);
     display: grid;
@@ -23,10 +29,63 @@
 
     background-color: grey;
     height: 5px;
+    width: 90%;
 
-    .success {
-        background-color: orange;
+    .reactBar {
+        background-color: $orange1;
         height: 5px;
-        width: 85%;
+        width: 90%;
     }
+
+    .javascriptBar {
+        background-color: $orange1;
+        height: 5px;
+        width: 90%;
+    }
+
+    .htmlBar {
+        background-color: $orange1;
+        height: 5px;
+        width: 90%;
+    }
+
+    .cssBar {
+        background-color: $orange2;
+        height: 5px;
+        width: 75%;
+    }
+
+    .sassBar {
+        background-color: $orange2;
+        height: 5px;
+        width: 75%;
+    }
+
+    .threeBar {
+        background-color: $orange4;
+        height: 5px;
+        width: 25%;
+    }
+    .nodeBar {
+        background-color: $orange3;
+        height: 5px;
+        width: 25%;
+    }
+    .expressBar {
+        background-color: $orange3;
+        height: 5px;
+        width: 25%;
+    }
+    .pythonBar {
+        background-color: $orange3;
+        height: 5px;
+        width: 50%;
+    }
+    .mongoBar {
+        background-color: $orange3;
+        height: 5px;
+        width: 25%;
+    }
+
+    
 }
