@@ -2,4 +2,12 @@ body {
   background-color: black;
   color: white;
 }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+  font-family: "Cabin", sans-serif;
+}
 /*# sourceMappingURL=website.css.map */

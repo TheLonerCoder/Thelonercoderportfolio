@@ -4,6 +4,13 @@ $orange3: orange;
 $orange4: rgb(255, 210, 7);
 
 
+
+
+h2 {
+    margin-top: 50px;
+}
+
+
 #journeySection {
     background-color: lighten($color: #000000, $amount: 0);
     display: grid;
@@ -30,6 +37,7 @@ $orange4: rgb(255, 210, 7);
     background-color: grey;
     height: 5px;
     width: 90%;
+
 
     .reactBar {
         background-color: $orange1;
@@ -64,7 +72,7 @@ $orange4: rgb(255, 210, 7);
     .threeBar {
         background-color: $orange4;
         height: 5px;
-        width: 25%;
+        width: 15%;
     }
     .nodeBar {
         background-color: $orange3;
@@ -88,4 +96,14 @@ $orange4: rgb(255, 210, 7);
     }
 
     
+}
+
+
+
+
+#languages {
+    
+    h4 {
+        text-align: left;
+    }
 }

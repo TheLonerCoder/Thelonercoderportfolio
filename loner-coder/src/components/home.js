@@ -12,6 +12,7 @@ function Home() {
   return (
     <div>
         <header>
+            <img src="imgs/man.png" alt="potrait" id='portrait'/>
             <h1>Hello! I'm <span id="name">Stephon Stokley</span></h1> 
             <h4>I'm a Web Developer|</h4>
         </header>

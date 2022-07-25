@@ -17,7 +17,7 @@ function Journey() {
           <h3>Technical Competencies</h3>
           <p>Represention of the usage/comfortability level of these languages, frameworks, and libraries in my projects</p>
           
-          <ul>
+          <ul id='languages'>
             <li>
               <h4>React</h4>
               <div className="bar"><div className='reactBar'></div></div>
@@ -48,10 +48,6 @@ function Journey() {
               <div className="bar"><div className='pythonBar'></div></div>
             </li>
 
-            <li>
-              <h4>Three.js</h4>
-              <div className="bar"><div className='threeBar'></div></div>
-            </li>
 
             <li>
               <h4>Node.js</h4>
@@ -69,6 +65,10 @@ function Journey() {
               <div className="bar"><div className='mongoBar'></div></div>
             </li>
 
+            <li>
+              <h4>Three.js</h4>
+              <div className="bar"><div className='threeBar'></div></div>
+            </li>
           </ul>
           
       </section>

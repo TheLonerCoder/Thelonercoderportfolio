@@ -1,3 +1,7 @@
+h2 {
+  margin-top: 50px;
+}
+
 #journeySection {
   background-color: black;
   display: -ms-grid;
@@ -65,7 +69,7 @@
 .bar .threeBar {
   background-color: #ffd207;
   height: 5px;
-  width: 25%;
+  width: 15%;
 }
 
 .bar .nodeBar {
@@ -90,5 +94,9 @@
   background-color: orange;
   height: 5px;
   width: 25%;
+}
+
+#languages h4 {
+  text-align: left;
 }
 /*# sourceMappingURL=journey.css.map */

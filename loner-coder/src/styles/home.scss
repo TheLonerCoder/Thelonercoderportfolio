@@ -6,8 +6,23 @@
 }
 
 
+#portrait {
+    height: 150px;
+    margin: 50px 0 10px 0;
+    border: white 2px solid;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+
 #aboutMe {
     margin-bottom: 50px;
+
+
+    p{
+        padding: 0px 20px;
+        // border: white 2px solid;
+    }
 }
 
 
