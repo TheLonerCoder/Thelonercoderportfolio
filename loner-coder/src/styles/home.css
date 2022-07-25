@@ -87,11 +87,14 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0px 5px;
 }
 
 .homeProjects #imageBox img {
   width: 300px;
-  margin: 2px 10px 10px 10px;
+  margin: 2px 10px 15px 10px;
+  -webkit-box-shadow: 3px 1px 2px black;
+          box-shadow: 3px 1px 2px black;
 }
 
 .homeProjects #imageBox img:hover {
@@ -108,5 +111,15 @@ button {
 #portBtn:hover {
   background-color: #0b82e4;
   cursor: pointer;
+}
+
+#imHere {
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+}
+
+#imHere:hover {
+  -webkit-filter: none !important;
+          filter: none !important;
 }
 /*# sourceMappingURL=home.css.map */

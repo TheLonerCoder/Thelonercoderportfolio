@@ -4,6 +4,7 @@ import '../styles/website.css'
 import {FaGithub, FaYoutube, FaTwitter, FaLinkedinIn, FaDownload, FaMailBulk, FaProjectDiagram} from 'react-icons/fa';
 import Journey from './journey';
 import HomeProjects from './homeProjects';
+import {Blink} from 'react-blink-text';
 
 
 // TODO Add hover "The Loner Coder" when you hover over "Stephon Stokley". it should fade out and in when you hover over and then back tom normal when not hover over
