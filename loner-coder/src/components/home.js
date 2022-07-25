@@ -12,7 +12,7 @@ function Home() {
   return (
     <div>
         <header>
-            <h1>Hello! i'm <span id="name">Stephon Stokley</span></h1> 
+            <h1>Hello! I'm <span id="name">Stephon Stokley</span></h1> 
             <h4>I'm a Web Developer|</h4>
         </header>
 

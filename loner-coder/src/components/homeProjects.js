@@ -12,7 +12,7 @@ function HomeProjects() {
             <a href=""><img src="imgs/worlda-green.jpg" alt="" /></a>
         </section>
 
-        <button>Full Porfolio</button>
+        <button id='portBtn'>Full Porfolio</button>
     </div>
   )
 }

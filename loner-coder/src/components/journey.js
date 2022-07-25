@@ -9,12 +9,17 @@ import { SiUdemy } from "react-icons/si";
 function Journey() {
   return (
     <div>
+      <h2>My Experiences</h2>
       <article id='journeySection'>
+
+
         <section id='journey1'>
+          <h3></h3>
           picture
         </section>
           
         <section id='journey2'>
+            <h3>My Web Development Journey</h3>
             <Timeline>
               <Elements  className="vertical-timeline-element--work"
     contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
