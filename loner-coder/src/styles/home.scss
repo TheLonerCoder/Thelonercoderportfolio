@@ -87,3 +87,31 @@ button {
     }
 }
 
+
+
+
+// ! Home Projects Component
+
+.homeProjects { 
+    
+
+    // img{
+    //     width: 50%;
+    // }
+
+    #imageBox {
+        // background-color: red;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+            width: 300px;
+            margin: 0px 10px;
+        }
+
+    }
+}
+
