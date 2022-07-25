@@ -62,20 +62,56 @@ let projectObject = {
 
 
 
-console.log(projectObject)
+// console.log(projectObject)
 
 
 
 function Projects() {
+
+    const [title, titleChange] = useState();
+    const [description, setdescription] = useState();
+    const [techstack, settechstack] = useState();
+
+
+    function renderData (e) {
+        // if (e.target.id === projectObject[e.target.id]) {
+            
+        // }
+        let idNum = e.currentTarget.id;
+
+        titleChange(projectObject[idNum].name);
+        setdescription(projectObject[idNum].description);
+        settechstack(projectObject[idNum].tech);
+
+        // projectObject[idNum]
+
+    }
+
+
   return (
     <div>
-        <h1>{projectObject.ftf.name}</h1>
+        <button id='ftf' onClick={renderData}>FTF</button>
+        <button id='vrworld' onClick={renderData}>VR</button>
+        <button id='solo' onClick={renderData}>SOLO</button>
+        <button id='worldla' onClick={renderData}>WORLDLA</button>
+
+
+        <h1>{title}</h1>
+        <p>{description}</p>
+        
+        <section>
+            <h2>Tech</h2>
+            <p>{techstack}</p>
+        </section>
+
+
+        {/* <h1>{projectObject.ftf.name}</h1>
         <p>{projectObject.ftf.description}</p>
         
         <section>
             <h2>Tech</h2>
             <p>{projectObject.ftf.tech}</p>
-        </section>
+        </section> */}
     </div>
   )
 }
