@@ -25,4 +25,15 @@
   -ms-grid-column-span: 1;
   grid-area: 1 / 2 / 2 / 3;
 }
+
+.bar {
+  background-color: grey;
+  height: 5px;
+}
+
+.bar .success {
+  background-color: orange;
+  height: 5px;
+  width: 85%;
+}
 /*# sourceMappingURL=journey.css.map */

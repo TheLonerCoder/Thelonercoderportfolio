@@ -17,3 +17,16 @@
         grid-area: 1 / 2 / 2 / 3; 
     }
 }
+
+
+.bar {
+
+    background-color: grey;
+    height: 5px;
+
+    .success {
+        background-color: orange;
+        height: 5px;
+        width: 85%;
+    }
+}
