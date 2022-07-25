@@ -99,4 +99,23 @@ h2 {
 #languages h4 {
   text-align: left;
 }
+
+#youtube {
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#youtube:hover {
+  background-color: #cc0000;
+}
+
+#youtube svg {
+  margin-right: 5px;
+}
+
+#youtube a {
+  text-decoration: none;
+  color: white;
+}
 /*# sourceMappingURL=journey.css.map */

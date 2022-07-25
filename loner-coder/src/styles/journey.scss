@@ -107,3 +107,28 @@ h2 {
         text-align: left;
     }
 }
+
+
+
+#youtube {
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+
+
+    &:hover {
+        background-color: darken($color: red, $amount: 10);
+    }
+
+
+    svg {
+        // fill: red;
+        margin-right: 5px;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
