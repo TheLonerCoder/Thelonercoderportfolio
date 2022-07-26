@@ -28,6 +28,14 @@ svg {
     fill: #61dbfb;
 }
 
+#html5 {
+    fill: #e44d26;
+}
+
+#css {
+    fill: #2965f1;
+}
+
 
 #projectBody {
     background-color: rgba($color: white, $alpha: 0.1);
@@ -82,4 +90,59 @@ p  {
 
 #techlogo {
     width: 25%;
+}
+
+
+
+#buttonSec {
+    margin-top: 10px;
+    // margin-bottom: 10px;
+}
+
+
+#demoBtn {
+    background-color: green;
+    margin-right: 12px;
+    border: 0;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    
+
+
+    &:hover {
+        background-color: darken($color: green, $amount: 10);
+        // box-shadow: 5px 5px 5px $mainColor;
+        cursor: pointer;
+    }    
+
+
+    svg {
+        margin-right: 5px;
+    }
+}
+
+
+#codebaseBtn {
+    background-color: red;
+    margin-right: 12px;
+    border: 0;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+
+
+    &:hover {
+        background-color: darken($color: red, $amount: 10);
+        // box-shadow: 5px 5px 5px $mainColor;
+        cursor: pointer;
+    }    
+
+
+    svg {
+        margin-right: 5px;
+    }
+
 }

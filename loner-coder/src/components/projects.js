@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import '../styles/website.css';
 import { projectObject } from '../data/portfolio-data';
-import { DiBootstrap as Bootstrap, DiCss3 as Css, DiHtml5 as Html5, DiJsBadge as Javascript, DiPython as Python, DiSass as Sass, DiReact } from "react-icons/di";
+import { DiBootstrap as Bootstrap, DiCss3 as Css, DiHtml5 as Html5, DiJsBadge as Javascript, DiPython as Python, DiSass as Sass, DiReact, DiGithubBadge as Github } from "react-icons/di";
+import { GoBrowser } from "react-icons/go";
 import '../styles/portfolio.css';
 
 
@@ -84,9 +85,9 @@ function Projects() {
             </div>
         </section>
 
-        <section>
-            <button id='demoBtn'>Live Demo</button>
-            <button id='codebaseBtn'>Code Base</button>
+        <section id='buttonSec'>
+            <a id='demoBtn'><GoBrowser />Live Demo</a>
+            <a id='codebaseBtn'><Github /> Code Base</a>
         </section>
         
         <section id="projectBody">

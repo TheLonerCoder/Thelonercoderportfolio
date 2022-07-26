@@ -19,6 +19,14 @@ svg {
   fill: #61dbfb;
 }
 
+#html5 {
+  fill: #e44d26;
+}
+
+#css {
+  fill: #2965f1;
+}
+
 #projectBody {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 0px 10%;
@@ -66,5 +74,47 @@ p {
 
 #techlogo {
   width: 25%;
+}
+
+#buttonSec {
+  margin-top: 10px;
+}
+
+#demoBtn {
+  background-color: green;
+  margin-right: 12px;
+  border: 0;
+  padding: 10px 10px;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#demoBtn:hover {
+  background-color: #004d00;
+  cursor: pointer;
+}
+
+#demoBtn svg {
+  margin-right: 5px;
+}
+
+#codebaseBtn {
+  background-color: red;
+  margin-right: 12px;
+  border: 0;
+  padding: 10px 10px;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#codebaseBtn:hover {
+  background-color: #cc0000;
+  cursor: pointer;
+}
+
+#codebaseBtn svg {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=portfolio.css.map */
