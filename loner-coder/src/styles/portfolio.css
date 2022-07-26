@@ -1,0 +1,70 @@
+svg {
+  margin-right: 5px;
+}
+
+#sass {
+  fill: #cf649a;
+}
+
+#javascript {
+  fill: #f7e018;
+  color: black;
+}
+
+#bootstrap {
+  fill: #800af8;
+}
+
+#react {
+  fill: #61dbfb;
+}
+
+#projectBody {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0px 10%;
+}
+
+.mainTitles {
+  text-align: left;
+}
+
+p {
+  text-align: left;
+}
+
+#gridBody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#gridBody #grid1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+  margin-right: 50px;
+}
+
+#gridBody #grid2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+#gridBody #grid2 h1 {
+  text-align: left;
+}
+
+#techlogo {
+  width: 25%;
+}
+/*# sourceMappingURL=portfolio.css.map */

@@ -1,0 +1,85 @@
+@import './Variables.scss';
+
+
+svg {
+    margin-right: 5px;
+    // height: ;
+}
+
+
+#sass {
+    fill: #cf649a;
+}
+
+
+#javascript {
+    fill: #f7e018;
+    color: black;
+}
+
+#bootstrap {
+    fill: #800af8;
+    // background-color: white;
+    
+}
+
+
+#react {
+    fill: #61dbfb;
+}
+
+
+#projectBody {
+    background-color: rgba($color: white, $alpha: 0.1);
+    padding: 0px 10%;
+}
+
+.mainTitles {
+    // background-color: $mainColor;
+    // width: 220px;
+    text-align: left;
+    
+}
+
+
+p  {
+    text-align: left;
+}
+
+
+
+
+
+#gridBody {
+    // background-color: lighten($color: #000000, $amount: 0);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+
+
+
+
+    #grid1 {
+        grid-area: 1 / 1 / 2 / 2; 
+        margin-right: 50px;
+    }
+
+    #grid2 {
+        grid-area: 1 / 2 / 2 / 3; 
+    
+
+        h1 {
+            text-align: left;
+        }
+
+
+    
+    }
+}
+
+
+#techlogo {
+    width: 25%;
+}

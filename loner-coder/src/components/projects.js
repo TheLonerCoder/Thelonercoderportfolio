@@ -2,18 +2,19 @@ import React, {useState} from 'react';
 import '../styles/website.css';
 import { projectObject } from '../data/portfolio-data';
 import { DiBootstrap as Bootstrap, DiCss3 as Css, DiHtml5 as Html5, DiJsBadge as Javascript, DiPython as Python, DiSass as Sass, DiReact } from "react-icons/di";
+import '../styles/portfolio.css';
 
 
 
 
 let converter = {
-    bootstrap: <Bootstrap />,
-    sass: <Sass />,
-    css: <Css />,
-    react: <DiReact />,
-    html: <Html5 />,
-    javascript: <Javascript />,
-    python: <Python />
+    bootstrap: <Bootstrap id='bootstrap' title='Bootstrap'/>,
+    sass: <Sass id='sass' title="Sass"/>,
+    css: <Css id='css' title="Css"/>,
+    react: <DiReact id='react' title="React"/>,
+    html: <Html5 id='html5' title="Html5"/>,
+    javascript: <Javascript id='javascript' title="Javascript"/>,
+    python: <Python id='python' title="Python"/>
 }
 
 
@@ -26,6 +27,7 @@ function Projects() {
     const [title, titleChange] = useState();
     const [description, setdescription] = useState();
     const [techstack, settechstack] = useState();
+    const [techlogo, setlogo] = useState();
 
 
 // ? Pulls external data from an Object and converts it to JSX
@@ -37,6 +39,7 @@ function Projects() {
 
         titleChange(projectObject[idNum].name);
         setdescription(projectObject[idNum].description);
+        setlogo(projectObject[idNum].logo);
         // settechstack(projectObject[idNum].tech);
         // console.log(projectObject[idNum].tech);
 
@@ -72,25 +75,40 @@ function Projects() {
 
 
         <h1>{title}</h1>
+        <section id='imageDemo'>
+            <div>
+                <img src={techlogo} alt="logo" id='techlogo'/>
+            </div>
+            <div>
+                {/* <img src={} alt="" /> */}
+            </div>
+        </section>
 
         <section>
             <button id='demoBtn'>Live Demo</button>
             <button id='codebaseBtn'>Code Base</button>
         </section>
         
-        <section>
-            <h2>About the Project</h2>
-            <p>{description}</p>
-            <h2>Tech</h2>
-            {/* <p>{techstack}</p> */}
-            <p>
-                {/* {techstack.map(item => {
-                    return (<li>{item}</li>)
-                })} */}
+        <section id="projectBody">
+            <div id='gridBody'>
+                <div id='grid1'>
+                    <h2 className='mainTitles'>About the Project</h2>
+                    <p>{description}</p>
+                </div>
+                <div id='grid2'>
+                    <h2 className='mainTitles'>Technologies Used</h2>
+                    {/* <p>{techstack}</p> */}
+                    <h1>
+                        {/* {techstack.map(item => {
+                            return (<li>{item}</li>)
+                        })} */}
 
-                {techstack}
-            </p>
-            <h2>Meet the Creators/Founders</h2>
+                        {techstack}
+                    </h1>
+                </div>
+            </div>
+
+            <h2 className='mainTitles'>Meet the Creators/Founders</h2>
         </section>
 
 
