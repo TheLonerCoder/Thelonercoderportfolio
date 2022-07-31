@@ -132,3 +132,122 @@ h2 {
         color: white;
     }
 }
+
+
+
+#frontend {
+    margin-top: 32px;
+}
+
+
+#cert {
+    width: 50%;
+    display: block;
+    // margin-bottom: 10px;
+    margin: 0 auto;
+    // word-spacing: 10px;
+
+    
+    
+    &:hover {
+        filter: opacity(90%);
+        cursor: pointer;
+        transform: scale(1.05);
+        // transform: skew(10deg, 10deg);
+    }
+}
+
+#certSection {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+        h4 {
+            margin: 15px 0 2px 0;
+        }
+}
+
+
+#techSection {
+    margin-top: 15%;
+}
+
+
+
+// ? ICONS
+
+#sassIcon {
+    fill: #cf649a;
+}
+
+#styleIcon {
+    fill: #ffd04e;
+}
+
+
+#jsIcon {
+    fill: #f7e018;
+    color: black;
+}
+
+#bootstrapIcon {
+    fill: #800af8;
+    // background-color: white;
+    
+}
+
+
+#reactIcon {
+    fill: #61dbfb;
+}
+
+// #html5 {
+//     fill: #e44d26;
+// }
+
+// #css {
+//     fill: #2965f1;
+// }
+
+#pythonIcon {
+    fill: #3772a5;
+}
+
+
+#expressIcon {
+    background-color: #2e2e2e;
+    border-radius: 100%;
+    padding: 3px;
+
+    &:hover {
+        fill: white;
+    }
+}
+
+
+#nodeIcon {
+    fill: #539e43;
+}
+
+
+#mongoIcon {
+    fill: #159452;
+}
+
+
+#gitIcon {
+    fill: #f05033;
+}
+
+
+#postmanIcon {
+    fill: #ff6c37;
+}
+
+#yarnIcon {
+    // fill: #2c8ebb;
+    color: white;
+
+    &:hover {
+        fill: #2c8ebb;
+    }
+}

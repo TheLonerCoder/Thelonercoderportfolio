@@ -118,4 +118,94 @@ h2 {
   text-decoration: none;
   color: white;
 }
+
+#frontend {
+  margin-top: 32px;
+}
+
+#cert {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+#cert:hover {
+  -webkit-filter: opacity(90%);
+          filter: opacity(90%);
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#certSection {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#certSection h4 {
+  margin: 15px 0 2px 0;
+}
+
+#techSection {
+  margin-top: 15%;
+}
+
+#sassIcon {
+  fill: #cf649a;
+}
+
+#styleIcon {
+  fill: #ffd04e;
+}
+
+#jsIcon {
+  fill: #f7e018;
+  color: black;
+}
+
+#bootstrapIcon {
+  fill: #800af8;
+}
+
+#reactIcon {
+  fill: #61dbfb;
+}
+
+#pythonIcon {
+  fill: #3772a5;
+}
+
+#expressIcon {
+  background-color: #2e2e2e;
+  border-radius: 100%;
+  padding: 3px;
+}
+
+#expressIcon:hover {
+  fill: white;
+}
+
+#nodeIcon {
+  fill: #539e43;
+}
+
+#mongoIcon {
+  fill: #159452;
+}
+
+#gitIcon {
+  fill: #f05033;
+}
+
+#postmanIcon {
+  fill: #ff6c37;
+}
+
+#yarnIcon {
+  color: white;
+}
+
+#yarnIcon:hover {
+  fill: #2c8ebb;
+}
 /*# sourceMappingURL=journey.css.map */

@@ -2,8 +2,16 @@ import React from 'react';
 import { VerticalTimeline as Timeline, VerticalTimelineElement as Elements}  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../styles/journey.css'
-import { DiAndroid, DiJavascript1, DiPython, DiReact  } from "react-icons/di";
-import { SiUdemy, SiYoutube } from "react-icons/si";
+import { DiAndroid, DiJavascript1, DiPython, DiReact, DiBootstrap, DiCss3, DiHtml5, DiJsBadge,  DiSass, DiGithubBadge, DiGit, DiNodejsSmall, DiNodejs } from "react-icons/di";
+import { SiUdemy, SiYoutube, SiPostman, SiExpress, SiMongodb, SiTypescript, SiYarn, SiStyledcomponents } from "react-icons/si";
+import styled, { keyframes } from 'styled-components';
+import {fadeInDown} from 'react-animations';
+
+
+// let certClick = {
+  
+// }
+
 
 
 function Journey() {
@@ -13,64 +21,64 @@ function Journey() {
       <article id='journeySection'>
 
 
-        <section id='journey1'>
-          <h3>Technical Competencies</h3>
-          <p>Represention of the usage/comfortability level of these languages, frameworks, and libraries in my projects</p>
-          
-          <ul id='languages'>
-            <li>
-              <h4>React</h4>
-              <div className="bar"><div className='reactBar'></div></div>
-            </li>
+      <section id='journey1'>
 
-            <li>
-              <h4>Javascript</h4>
-              <div className="bar"><div className='javascriptBar'></div></div>
-            </li>
-
-            <li>
-              <h4>HTML</h4>
-              <div className="bar"><div className='htmlBar'></div></div>
-            </li>
-
-            <li>
-              <h4>CSS</h4>
-              <div className="bar"><div className='cssBar'></div></div>
-            </li>
-
-            <li>
-              <h4>SASS/SCSS</h4>
-              <div className="bar"><div className='sassBar'></div></div>
-            </li>
-
-            <li>
-              <h4>Python</h4>
-              <div className="bar"><div className='pythonBar'></div></div>
-            </li>
-
-
-            <li>
-              <h4>Node.js</h4>
-              <div className="bar"><div className='nodeBar'></div></div>
-            </li>
-
-            <li>
-              <h4>Express.js</h4>
-              <div className="bar"><div className='expressBar'></div></div>
-            </li>
-
-
-            <li>
-              <h4>MongoDB</h4>
-              <div className="bar"><div className='mongoBar'></div></div>
-            </li>
-
-            <li>
-              <h4>Three.js</h4>
-              <div className="bar"><div className='threeBar'></div></div>
-            </li>
+        {/* <div id='frontend'> */}
+          <h3>Certifications</h3>
+          <ul
+          id='certSection'>
+            <a href="imgs/NucampCert.pdf" target="_blank"><img src="imgs/cert.webp" alt="cert" id='cert'/></a>
+            <li><i><h4> Nucamp </h4>(Full Stack & Mobile Development) </i></li>
+            <li></li>
           </ul>
+        {/* </div> */}
+
+
           
+
+        <div id="techSection">
+            <h3>Technical Competencies</h3>
+            
+            <div>
+              <h4>Front End</h4>
+              
+              <ul>
+              {/* size = {20} */}
+              
+                <li><DiReact size={'2rem'} title="React" id="reactIcon"/></li>
+                <li><DiJavascript1 size={'2rem'} title="Javascript" id="jsIcon"/> </li>
+                <li><DiSass size={'2rem'} title="Sass" id="sassIcon"/> </li>
+                <li><DiBootstrap size={'2rem'} title="Bootstrap" id="bootstrapIcon"/> </li>
+                <li><SiStyledcomponents size={'2rem'} title="Styled Components" id="styleIcon"/> </li>
+                {/* <li><SiTypescript size={'2rem'}/> </li> */}
+                {/* <li><DiCss3 size={'2rem'}/> </li>
+                <li><DiHtml5 size={'2rem'}/> </li> */}
+              </ul>
+            </div>
+
+
+          <div>
+            <h4>Back End</h4>
+
+            <ul>
+            <li><DiPython size={'2rem'} title="Python" id="pythonIcon"/> </li>
+            <li><SiExpress size={'1.5rem'} title="Express.js" id="expressIcon"/> </li>
+            <li><DiNodejsSmall size={'2rem'} title="Node.js" id="nodeIcon"/> </li>
+            <li><SiMongodb size={'1.5rem'} title="MongoDb" id="mongoIcon"/> </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Other</h4>
+            
+            <ul>
+            <li><DiGit size={'2rem'} title="Git" id="gitIcon"/> </li>
+            <li><SiPostman size={'1.5rem'} title="Postman" id="postmanIcon"/> </li>
+            <li><SiYarn size={'1.5rem'} title="Yarn (Package Manager)" id="yarnIcon"/> </li>
+            </ul>
+          </div>
+        </div>
+
       </section>
 
 

@@ -2,11 +2,12 @@ export let projectObject = {
     ftf : {
         name: 'Forge The Fort',
         logo: 'imgs/Forge-the-Fort.jpg',
+        prev: 'imgs/ftf.webp',
         gif: '',
         description: 'A hub for connecting people in underserved/overlooked cities across the midwest. This hub connects innovators, investors, community leaders, civilians, politicians, etc all in one place to find solutions for their specific problems, connecting people from surrounding districts, counties, cities, and - even - states. The ultimate goal is to provide people with the tools and knowledge to build up their own cities here in the Midwest.',
         tech: ['bootstrap', 'sass', 'javascript', 'html', 'css'],
         demo: '',
-        codebase: '',
+        codebase: 'https://github.com/TheLonerCoder/ForgeTheFort',
         founders: '',
         concept: false
 
@@ -15,11 +16,12 @@ export let projectObject = {
     vrworld: {
         name: 'VR World',
         logo: 'imgs/VR-WORLD.jpg',
+        prev: '',
         gif: '',
         description: "A fake landing page for a VR-based company. This company specializes in VR and immersive technology and connects it's userbase to the metaverse.",
         tech: ['react', 'sass', 'javascript', 'html', 'css'],
         demo: '',
-        codebase: '',
+        codebase: 'https://github.com/TheLonerCoder/VR-World',
         founders: '',
         concept: false
 
@@ -28,11 +30,12 @@ export let projectObject = {
     solo: {
         name: 'Solo Innovations',
         logo: 'imgs/solo.jpg',
+        prev: 'imgs/solo.webp',
         gif: '',
         description: "A startup management app. Following principles from The Lean Startup, this whiteboard-styled app is designed to help you organize your thoughts from ideation to product.",
         tech: ['react', 'sass', 'javascript', 'html', 'css'],
         demo: '',
-        codebase: '',
+        codebase: 'https://github.com/TheLonerCoder/Solo-Innovations',
         founders: '',
         concept: false
 
@@ -41,11 +44,12 @@ export let projectObject = {
     worldla: {
         name: 'Worldla',
         logo: 'imgs/worlda-green.jpg',
+        prev: '',
         gif: '',
         description: "A platform where you can become more aware of how learning a language opens up doors. It'll give resources to learn languages, show you where you can use them, etc.",
         tech: ['react', 'sass', 'javascript', 'html', 'css'],
         demo: '',
-        codebase: '',
+        codebase: 'https://github.com/TheLonerCoder/Worldla',
         founders: '',
         concept: false
 
@@ -55,6 +59,7 @@ export let projectObject = {
     imhere: {
         name: "I'm Here",
         logo: '',
+        prev: '',
         gif: '',
         description: "A portal with both a student and teacher can log into and show they're in attendance in their class.",
         tech: ['react', 'bootstrap', 'sass', 'javascript'],

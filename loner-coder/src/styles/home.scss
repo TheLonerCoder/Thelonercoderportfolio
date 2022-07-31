@@ -21,6 +21,7 @@
 
     p{
         padding: 0px 20px;
+        text-align: center;
         // border: white 2px solid;
     }
 }
@@ -181,6 +182,10 @@ button {
     // img{
     //     width: 50%;
     // }
+
+        img:hover {
+            cursor: pointer;
+        }
 
     #imageBox {
         // background-color: rgba($color: white, $alpha: 0.1);
