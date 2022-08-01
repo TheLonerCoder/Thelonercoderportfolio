@@ -4,7 +4,8 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
+  Navigate
 } from "react-router-dom";
 import Home from './home';
 import Journey from './journey';
@@ -42,7 +43,8 @@ function Navbar () {
                 {/* <Route path='/journey' element={<Journey id='journey'/>}/>
                 <Route path='/portfolio' element={<Portfolio />}/> */}
                 <Route path='/portfolio' element={<Portfolio />}/>
-                <Route path='*' element={<ErrorPage />}/>
+                {/* <Route path='*' element={<ErrorPage />}/> */}
+                <Route path='*' element={<Navigate to='/'/> }/>
                 {/* {profileArray.map(item => {
                     return (<Route path='/por' element={<Portfolio/>}>{item}</Route>)
                 })} */}
