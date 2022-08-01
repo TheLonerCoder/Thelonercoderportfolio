@@ -43,7 +43,8 @@ function Home() {
   return (
     <div>
         <header>
-            <img src="imgs/man.png" alt="potrait" id='portrait'/>
+            {/* <img src="imgs/man.png" alt="potrait" id='portrait'/> */}
+            <img src="/imgs/man.png" alt="potrait" id='portrait'/>
             <h1>Hello! I'm <span id="name" onMouseEnter={nameChange} onMouseLeave={nameChangeBack}>{currentName}</span></h1> 
             <h4>I'm a Web Developer<FlashSpan> | </FlashSpan></h4>
         </header>
