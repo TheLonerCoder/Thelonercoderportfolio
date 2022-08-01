@@ -1,3 +1,7 @@
+@import './Variables.scss';
+
+
+
 .navbar {
     
     
@@ -8,8 +12,22 @@
         
         a {
             text-decoration: none;
+            color: white;
+            margin-right: 5px;
         }
     }
 
 
+}
+
+nav {
+    padding-top: 20px;
+    a {
+        color: white;
+        margin-right: 10px;
+
+        &:hover {
+            color: $mainColor;
+        }
+    }
 }

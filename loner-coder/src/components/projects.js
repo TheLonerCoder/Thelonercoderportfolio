@@ -204,7 +204,7 @@ function Projects() {
                 </div>
             </div>
 
-            <h2 className='mainTitles'>Meet the Creators/Founders</h2>
+            {/* <h2 className='mainTitles'>Meet the Creators/Founders</h2> */}
         </section>
     </SlideDiv>
     </section>
