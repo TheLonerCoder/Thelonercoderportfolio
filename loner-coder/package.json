@@ -1,5 +1,5 @@
 {
-  "homepage": "http://TheLonerCoder.github.io/Thelonercoderportfolio/",
+  "homepage": "https://TheLonerCoder.github.io/Thelonercoderportfolio/",
   "name": "loner-coder",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,5 +44,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
