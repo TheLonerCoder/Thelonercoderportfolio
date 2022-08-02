@@ -148,7 +148,11 @@ h2 {
 }
 
 #techSection {
-  margin-top: 15%;
+  margin-top: 50px;
+}
+
+#techSection #techHeader {
+  margin-bottom: 50px;
 }
 
 #sassIcon {
@@ -226,5 +230,22 @@ h2 {
 .skillList {
   margin: 0 auto;
   padding: 0;
+  height: 90px;
+}
+
+hr {
+  width: 80px;
+}
+
+@media (max-width: 708px) {
+  #journeySection {
+    background-color: black;
+  }
+  #journeySection #journey1 {
+    width: 200%;
+  }
+  #journeySection #journey2 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=journey.css.map */

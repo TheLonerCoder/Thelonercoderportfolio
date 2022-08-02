@@ -139,4 +139,17 @@ a {
           justify-content: space-evenly;
   margin-bottom: 21px;
 }
+
+@media (max-width: 708px) {
+  #gridBody {
+    display: block;
+    padding: 10px 0;
+  }
+  #gridBody #grid1 {
+    all: revert;
+  }
+  #gridBody #grid2 {
+    all: revert;
+  }
+}
 /*# sourceMappingURL=portfolio.css.map */

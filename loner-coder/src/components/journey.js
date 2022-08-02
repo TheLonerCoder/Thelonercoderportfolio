@@ -24,7 +24,7 @@ function Journey() {
       <section id='journey1'>
 
         {/* <div id='frontend'> */}
-          <h3>Certifications</h3>
+          <h3 className='headerSecs'>Certifications</h3> 
           <ul
           id='certSection'>
             <a href="Thelonercoderportfolio/imgs/NucampCert.pdf" target="_blank"><img src="Thelonercoderportfolio/imgs/cert.webp" alt="cert" id='cert'/></a>
@@ -33,11 +33,11 @@ function Journey() {
           </ul>
         {/* </div> */}
 
-
+        <hr/>
           
 
         <div id="techSection">
-            <h3>Technical Competencies</h3>
+            <h3 className='headerSecs' id='techHeader'>Technical Competencies</h3>
             
             <div>
               <h4>Front End</h4>
@@ -103,7 +103,7 @@ function Journey() {
 
           
         <section id='journey2'>
-            <h3>My Web Development Journey</h3>
+            <h3 className='headerSecs'>My Web Development Journey</h3> 
             <Timeline>
               <Elements  className="vertical-timeline-element--work"
                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}

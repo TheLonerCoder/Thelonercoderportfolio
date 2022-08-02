@@ -1,3 +1,6 @@
+@import './Variables.scss';
+
+
 $orange1: rgb(255, 38, 0);
 $orange2: #ff7004;
 $orange3: orange;
@@ -170,7 +173,12 @@ h2 {
 
 
 #techSection {
-    margin-top: 15%;
+    // margin-top: 15%;
+    margin-top: 50px;
+
+    #techHeader {
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -275,4 +283,48 @@ h2 {
 .skillList {
     margin: 0 auto;
     padding: 0;
+    height: 90px;
+}
+
+
+hr {
+    width: 80px;
+
+}
+
+// .headerSecs {
+//     border-bottom: 2px solid $mainColor;
+// }
+
+
+
+// ! Media Queries
+
+@media (max-width: 708px) {
+    #journeySection {
+        background-color: lighten($color: #000000, $amount: 0);
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: 1fr;
+        // grid-column-gap: 0px;
+        // grid-row-gap: 0px; 
+    
+    
+    
+    
+        #journey1 {
+            // grid-area: 1 / 1 / 2 / 2; 
+            // all: revert;
+            // all: none;
+            width: 200%;
+
+        }
+    
+        #journey2 {
+            // grid-area: 1 / 2 / 2 / 3; 
+            display: none;
+            // visibility: collapse;
+            
+        }
+    }
 }
