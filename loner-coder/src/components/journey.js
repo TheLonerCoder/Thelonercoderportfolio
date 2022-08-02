@@ -27,7 +27,7 @@ function Journey() {
           <h3>Certifications</h3>
           <ul
           id='certSection'>
-            <a href="imgs/NucampCert.pdf" target="_blank"><img src="imgs/cert.webp" alt="cert" id='cert'/></a>
+            <a href="Thelonercoderportfolio/imgs/NucampCert.pdf" target="_blank"><img src="Thelonercoderportfolio/imgs/cert.webp" alt="cert" id='cert'/></a>
             <li><i><h4> Nucamp </h4>(Full Stack & Mobile Development) </i></li>
             <li></li>
           </ul>

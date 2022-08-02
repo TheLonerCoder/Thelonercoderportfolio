@@ -125,6 +125,7 @@ h2 {
 
 #cert {
   width: 50%;
+  min-width: 160px;
   display: block;
   margin: 0 auto;
 }

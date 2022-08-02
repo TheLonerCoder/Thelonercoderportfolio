@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar';
+import Home from './components/home';
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
       </header> */}
 
 
-      <header>
+      {/* <header>
         <Navbar />
-      </header>
+      </header>  */}
+      <Home  />
     </div>
   );
 }

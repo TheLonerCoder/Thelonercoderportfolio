@@ -142,7 +142,7 @@ function Projects() {
 
 
   return (
-    <div>
+    <div className='projectsUrl'>
         {/* <button id='ftf' onClick={renderData}>FTF</button>
         <button id='vrworld' onClick={renderData}>VR</button>
         <button id='solo' onClick={renderData}>SOLO</button>
@@ -154,11 +154,11 @@ function Projects() {
     <div className='homeProjects'>
         <h2>{projectTitle}</h2>
         <section id='imageBox'>
-            <a  id='ftf' onClick={renderData}><img src="imgs/Forge-the-Fort.jpg" alt="" className='placeholders'/></a>
-            <a id='vrworld' onClick={renderData}><img src="imgs/VR-WORLD.jpg" alt=""/></a>
-            <a id='solo' onClick={renderData}><img src="imgs/solo.jpg" alt=""/></a>
-            <a id='worldla' onClick={renderData}><img src="imgs/worlda-green.jpg" alt=""/></a>
-            <a style={port} id='concepts'><img src="imgs/im-here.png" alt="" id='imHere'/></a>
+            <a  id='ftf' onClick={renderData}><img src="Thelonercoderportfolio/imgs/Forge-the-Fort.jpg" alt="" className='placeholders'/></a>
+            <a id='vrworld' onClick={renderData}><img src="Thelonercoderportfolio/imgs/VR-WORLD.jpg" alt=""/></a>
+            <a id='solo' onClick={renderData}><img src="Thelonercoderportfolio/imgs/solo.jpg" alt=""/></a>
+            <a id='worldla' onClick={renderData}><img src="Thelonercoderportfolio/imgs/worlda-green.jpg" alt=""/></a>
+            <a style={port} id='concepts'><img src="Thelonercoderportfolio/imgs/im-here.png" alt="" id='imHere'/></a>
         </section>
 
         <button id='portBtn' onClick={fullPort}>Full Porfolio</button>
