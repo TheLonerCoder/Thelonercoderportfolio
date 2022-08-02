@@ -56,10 +56,10 @@ function Home() {
           </ul>
         </nav>
 
-        {/* <ul id='navIcons'>
+        <ul id='navIcons'>
           <li><Link to='navBar' smooth={true} offset={50} duration={500}><BsFillArrowUpSquareFill size={25}/> </Link></li>
-          <li><Link to='ExperienceContainer' smooth={true} offset={450} duration={500}><BsFillArrowDownSquareFill size={25}/></Link></li>
-        </ul> */}
+          {/* <li><Link to='ExperienceContainer' smooth={true} offset={450} duration={500}><BsFillArrowDownSquareFill size={25}/></Link></li> */}
+        </ul>
 
         <header>
             {/* <img src="imgs/man.png" alt="potrait" id='portrait'/> */}

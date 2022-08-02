@@ -195,34 +195,6 @@ button {
 }
 
 
-#navIcons {
-    position: sticky;
-    top: 0;
-
-    
-    
-    li {
-        position: absolute;
-        // left: 2px;
-        // top: 5px;
-        left: 5px;
-        display: block;
-        margin-bottom: 5px;
-
-
-        svg {
-
-            fill: rgba($color: white, $alpha: 0.5);
-
-            &:hover {
-                all: revert;
-                fill: rgba($color: $mainColor, $alpha: 0.5);
-            }
-
-        }
-
-    }
-}
 
 
 // ! Home Projects Component
@@ -295,6 +267,10 @@ button {
 }
 
 
+#navIcons {
+    // display: none;
+    visibility: hidden;
+}
 
 
 
@@ -312,4 +288,41 @@ button {
 
 
 
+@media (max-width: 730px) {
+    #navIcons {
+        visibility: visible;
+        position: sticky;
+        top: 50px;
+        // left: 10px;
+        
+        
+    
+        
+        
+        li {
+            position: absolute;
+            left: 10px;
+            top: 100px;
+            // bottom: 0px;
+            // top: 5px;
+            // left: 5px;
+            // bottom: 20;
+            // left: 20px;
+            margin-bottom: 5px;
+    
+    
+            svg {
+               
+                fill: rgba($color: white, $alpha: 0.5);
+    
+                &:hover {
+                    all: revert;
+                    fill: rgba($color: $mainColor, $alpha: 0.5);
+                }
+    
+            }
+    
+        }
+    }
+}
 
