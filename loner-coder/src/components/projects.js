@@ -6,7 +6,7 @@ import { GoBrowser } from "react-icons/go";
 import '../styles/portfolio.css';
 import '../styles/home.css';
 import styled, { keyframes } from 'styled-components';
-import {fadeInDown, fadeInDownBig, flash, slideInLeft} from 'react-animations';
+import {fadeInDown, fadeInDownBig, flash, slideInLeft, zoomIn} from 'react-animations';
 
 
 
@@ -41,6 +41,11 @@ const SlideDiv = styled.div `
 const flashAnimation = keyframes `${flash}`;
 const FlashDiv = styled.div `
     animation: infinite ${flashAnimation}
+`
+
+const zoomAnimation = keyframes `${zoomIn}`;
+const ZoomDiv = styled.div `
+    animation: 3s ${zoomAnimation}
 `
 
 
@@ -143,6 +148,10 @@ function Projects() {
 
   return (
     <div className='projectsUrl'>
+
+            {/* <zoomDiv style={{backgroundColor: 'red', width: '200px', height: '200px'}}>
+                testing
+            </zoomDiv> */}
         {/* <button id='ftf' onClick={renderData}>FTF</button>
         <button id='vrworld' onClick={renderData}>VR</button>
         <button id='solo' onClick={renderData}>SOLO</button>
@@ -158,7 +167,7 @@ function Projects() {
             <a id='vrworld' onClick={renderData}><img src="Thelonercoderportfolio/imgs/VR-WORLD.jpg" alt=""/></a>
             <a id='solo' onClick={renderData}><img src="Thelonercoderportfolio/imgs/solo.jpg" alt=""/></a>
             <a id='worldla' onClick={renderData}><img src="Thelonercoderportfolio/imgs/worlda-green.jpg" alt=""/></a>
-            <a style={port} id='concepts'><img src="Thelonercoderportfolio/imgs/im-here.png" alt="" id='imHere'/></a>
+            <ZoomDiv style={port}><a id='concepts'><img src="Thelonercoderportfolio/imgs/im-here.png" alt="" id='imHere'/></a></ZoomDiv>
         </section>
 
         <button id='portBtn' onClick={fullPort}>Full Porfolio</button>

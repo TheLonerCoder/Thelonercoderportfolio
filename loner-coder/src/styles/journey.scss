@@ -154,6 +154,7 @@ h2 {
         filter: opacity(90%);
         cursor: pointer;
         transform: scale(1.05);
+        // transform: translate(0px, -20px);
         // transform: skew(10deg, 10deg);
     }
 }
@@ -251,4 +252,27 @@ h2 {
     &:hover {
         fill: #2c8ebb;
     }
+}
+
+
+
+
+.divIcons {
+    display: inline-block;
+
+    p {
+        text-align: center;
+    }
+
+    svg {
+        margin: 0 auto;
+    }
+
+    margin-right: 2px;
+}
+
+
+.skillList {
+    margin: 0 auto;
+    padding: 0;
 }

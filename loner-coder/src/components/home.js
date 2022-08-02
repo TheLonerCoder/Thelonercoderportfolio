@@ -76,10 +76,10 @@ function Home() {
             </p>
             
             <ul id='socialLinks'>
-                <li><a href="https://github.com/TheLonerCoder" target="_blank"><FaGithub /></a></li>
-                <li><a href="" target="_blank"><FaYoutube /></a></li>
-                <li><a href="https://twitter.com/thelonercoder/with_replies" target="_blank"><FaTwitter /></a></li>
-                <li><a href="" target="_blank"><FaLinkedinIn /></a></li>
+                <li><a href="https://github.com/TheLonerCoder" target="_blank"><FaGithub size={22}/></a></li>
+                <li><a href="" target="_blank"><FaYoutube size={22}/></a></li>
+                {/* <li><a href="https://twitter.com/thelonercoder/with_replies" target="_blank"><FaTwitter /></a></li> */}
+                <li><a href="https://www.linkedin.com/in/stephon-stokley/" target="_blank"><FaLinkedinIn size={22}/></a></li>
             </ul>
 
             {/* <button id='emailBtn'><FaMailBulk />Email Me</button>

@@ -42,14 +42,18 @@ function Journey() {
             <div>
               <h4>Front End</h4>
               
-              <ul>
+              <ul className='skillList'>
               {/* size = {20} */}
               
-                <li><DiReact size={'2rem'} title="React" id="reactIcon"/></li>
-                <li><DiJavascript1 size={'2rem'} title="Javascript" id="jsIcon"/> </li>
-                <li><DiSass size={'2rem'} title="Sass" id="sassIcon"/> </li>
-                <li><DiBootstrap size={'2rem'} title="Bootstrap" id="bootstrapIcon"/> </li>
-                <li><SiStyledcomponents size={'2rem'} title="Styled Components" id="styleIcon"/> </li>
+                <li><div className='divIcons'><DiReact size={'2rem'} title="React" id="reactIcon"/> <p style={{marginTop: '0'}}>React</p></div></li>
+
+                <li><div className='divIcons'><DiJavascript1 size={'2rem'} title="Javascript" id="jsIcon"/><p style={{marginTop: '0'}}>Javascript</p></div></li>
+
+                <li><div className='divIcons'><DiSass size={'2rem'} title="Sass" id="sassIcon"/><p style={{marginTop: '0'}}>SASS</p></div> </li>
+
+                <li><div className='divIcons'><DiBootstrap size={'2rem'} title="Bootstrap" id="bootstrapIcon"/><p style={{marginTop: '0'}}>Bootstrap</p></div> </li>
+
+                <li><div className='divIcons'><SiStyledcomponents size={'2rem'} title="Styled Components" id="styleIcon"/><p style={{marginTop: '0'}}>Styled <br/> Components</p></div> </li>
                 {/* <li><SiTypescript size={'2rem'}/> </li> */}
                 {/* <li><DiCss3 size={'2rem'}/> </li>
                 <li><DiHtml5 size={'2rem'}/> </li> */}
@@ -60,23 +64,38 @@ function Journey() {
           <div>
             <h4>Back End</h4>
 
-            <ul>
-            <li><DiPython size={'2rem'} title="Python" id="pythonIcon"/> </li>
-            <li><SiExpress size={'1.5rem'} title="Express.js" id="expressIcon"/> </li>
-            <li><DiNodejsSmall size={'2rem'} title="Node.js" id="nodeIcon"/> </li>
-            <li><SiMongodb size={'1.5rem'} title="MongoDb" id="mongoIcon"/> </li>
+            <ul className='skillList'>
+            <li><div className='divIcons'><DiPython size={'2rem'} title="Python" id="pythonIcon"/> <p style={{marginTop: '0'}}>Python</p></div></li>
+
+            <li><div className='divIcons'><SiExpress size={'1.5rem'} title="Express.js" id="expressIcon"/> <p style={{marginTop: '0'}}>Express</p></div></li>
+
+            <li><div className='divIcons'><DiNodejsSmall size={'2rem'} title="Node.js" id="nodeIcon"/> <p style={{marginTop: '0'}}>Node js</p></div></li>
+
+            <li><div className='divIcons'><SiMongodb size={'1.5rem'} title="MongoDb" id="mongoIcon"/> <p style={{marginTop: '0'}}>MongoDb</p></div></li>
             </ul>
           </div>
 
           <div>
             <h4>Other</h4>
             
-            <ul>
-            <li><DiGit size={'2rem'} title="Git" id="gitIcon"/> </li>
-            <li><SiPostman size={'1.5rem'} title="Postman" id="postmanIcon"/> </li>
-            <li><SiYarn size={'1.5rem'} title="Yarn (Package Manager)" id="yarnIcon"/> </li>
+            <ul className='skillList'>
+            <li><div className='divIcons'><DiGit size={'2rem'} title="Git" id="gitIcon"/> <p style={{marginTop: '0'}}>Git</p></div></li>
+
+            <li><div className='divIcons'><SiPostman size={'1.5rem'} title="Postman" id="postmanIcon"/> <p style={{marginTop: '0'}}>Postman</p></div></li>
+
+            <li><div className='divIcons'><SiYarn size={'1.5rem'} title="Yarn (Package Manager)" id="yarnIcon"/> <p style={{marginTop: '0'}}>Yarn</p></div></li>
             </ul>
           </div>
+
+          {/* <div>
+            <h4>Test</h4>
+            
+            <ul>
+            <li><div className='divIcons'> <DiGit size={'2rem'} title="Git" id="gitIcon2"/> <p style={{marginTop: '0'}}>test</p></div> </li>
+            <li><SiPostman size={'1.5rem'} title="Postman2" id="postmanIcon2"/> </li>
+            <li><SiYarn size={'1.5rem'} title="Yarn (Package Manager)" id="yarnIcon2"/> </li>
+            </ul>
+          </div> */}
         </div>
 
       </section>

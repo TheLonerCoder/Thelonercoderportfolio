@@ -209,4 +209,22 @@ h2 {
 #yarnIcon:hover {
   fill: #2c8ebb;
 }
+
+.divIcons {
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.divIcons p {
+  text-align: center;
+}
+
+.divIcons svg {
+  margin: 0 auto;
+}
+
+.skillList {
+  margin: 0 auto;
+  padding: 0;
+}
 /*# sourceMappingURL=journey.css.map */
