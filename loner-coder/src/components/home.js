@@ -22,11 +22,22 @@ import { Link } from 'react-scroll'
 // rcfe
 
 
-
+// ? Animations
 const flashAnimation = keyframes `${flash}`;
 const FlashSpan = styled.span `
     animation: 2s ${flashAnimation}
 `
+// 0.486
+// TODO change to styled component
+// ? Styling
+const bodyStyling = {
+  backgroundImage: 'url(Thelonercoderportfolio/imgs/space.webp)',
+  backgroundColor: 'rgba(0, 0, 0, 0.8)',
+  backgroundBlendMode: 'overlay',
+  backgroundSize: "contain",
+  backgroundRepeat: "no-repeat"
+}
+
 
 
 
@@ -47,7 +58,7 @@ function Home() {
 
   return (
     <div>
-
+      <div className="bodyBackground" style={bodyStyling}>
         <nav id='navBar'>
           <ul>
             <li><Link to='projectsUrl' smooth={true} offset={50} duration={500}>Projects</Link></li>
@@ -90,7 +101,7 @@ function Home() {
             <a href="Thelonercoderportfolio/imgs/im-here.png" download id='resume'><FaDownload />Resume</a>
             <a id='projectBtns'><FaProjectDiagram />Projects</a>
         </article>
-
+      </div>
 
         {/* <HomeProjects /> */}
         <Projects/>
