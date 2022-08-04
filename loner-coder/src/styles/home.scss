@@ -24,10 +24,17 @@
     margin-bottom: 50px;
 
 
+    #topPara {
+        margin-top: 40px;
+    }
+
+
     p{
         padding: 0px 20px;
         text-align: center;
         margin-bottom: 20px;
+        // margin-top: 40px;
+        // padding: 0 50vw;
         // border: white 2px solid;
 
 
@@ -331,3 +338,49 @@ button {
     }
 }
 
+
+
+
+@media (min-width: 740px) {
+
+    #aboutMe {
+        p{
+            // padding: 0 80px;
+            padding: 0 15%;
+        }
+    }
+}
+
+
+@media (min-width: 950px) {
+
+    #aboutMe {
+        p{
+            // padding: 0 120px;
+            padding: 0 20%;
+        }
+    }
+}
+
+
+@media (min-width: 1050px) {
+
+    #aboutMe {
+        p{
+            // padding: 0 180px;
+            padding: 0 20%;
+        }
+    }
+}
+
+
+
+@media (min-width: 1465px) {
+
+    #aboutMe {
+        p{
+            // padding: 0 180px;
+            padding: 0 25%;
+        }
+    }
+}

@@ -6,7 +6,7 @@ import { GoBrowser } from "react-icons/go";
 import '../styles/portfolio.css';
 import '../styles/home.css';
 import styled, { keyframes } from 'styled-components';
-import {fadeInDown, fadeInDownBig, flash, slideInLeft, zoomIn} from 'react-animations';
+import {fadeInDown, fadeInDownBig, flash, slideInLeft, zoomIn, fadeIn} from 'react-animations';
 
 
 
@@ -46,6 +46,12 @@ const FlashDiv = styled.div `
 const zoomAnimation = keyframes `${zoomIn}`;
 const ZoomDiv = styled.div `
     animation: 3s ${zoomAnimation}
+`
+
+
+const fadeAnimation = keyframes `${fadeIn}`;
+const Fadeh1 = styled.h1 `
+    animation: 2s ${fadeAnimation}
 `
 
 
@@ -178,7 +184,9 @@ function Projects() {
 
     <section className="projectInfo" style={projectVisible}>
     <SlideDiv>
+        
         <h1>{title}</h1>
+        
         <section id='imageDemo'>
             <div id='demo1'>
                 <img src={techlogo} alt="logo" id='techlogo'/>

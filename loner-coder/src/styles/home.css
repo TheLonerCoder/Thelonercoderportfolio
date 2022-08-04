@@ -14,6 +14,10 @@
   margin-bottom: 50px;
 }
 
+#aboutMe #topPara {
+  margin-top: 40px;
+}
+
 #aboutMe p {
   padding: 0px 20px;
   text-align: center;
@@ -230,6 +234,30 @@ button {
   #navIcons li svg:hover {
     all: revert;
     fill: rgba(45, 155, 245, 0.5);
+  }
+}
+
+@media (min-width: 740px) {
+  #aboutMe p {
+    padding: 0 15%;
+  }
+}
+
+@media (min-width: 950px) {
+  #aboutMe p {
+    padding: 0 20%;
+  }
+}
+
+@media (min-width: 1050px) {
+  #aboutMe p {
+    padding: 0 20%;
+  }
+}
+
+@media (min-width: 1465px) {
+  #aboutMe p {
+    padding: 0 25%;
   }
 }
 /*# sourceMappingURL=home.css.map */

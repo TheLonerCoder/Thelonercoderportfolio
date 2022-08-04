@@ -8,7 +8,7 @@ import Journey from './journey';
 // import {Blink} from 'react-blink-text';
 import Projects from './projects';
 import styled, { keyframes } from 'styled-components';
-import {flash} from 'react-animations';
+import {flash, fadeIn} from 'react-animations';
 // import * as Scroll from 'react-scroll';
 import { Link } from 'react-scroll'
 
@@ -25,8 +25,10 @@ import { Link } from 'react-scroll'
 // ? Animations
 const flashAnimation = keyframes `${flash}`;
 const FlashSpan = styled.span `
-    animation: 2s ${flashAnimation}
+    animation: 2s ${flashAnimation} infinite
 `
+
+
 // 0.486
 // TODO change to styled component
 // ? Styling
@@ -76,11 +78,11 @@ function Home() {
             {/* <img src="imgs/man.png" alt="potrait" id='portrait'/> */}
             <img src="Thelonercoderportfolio/imgs/man.png" alt="potrait" id='portrait'/> 
             <h1>Hello! I'm <span id="name" onMouseEnter={nameChange} onMouseLeave={nameChangeBack}>{currentName}</span></h1> 
-            <h4>I'm a Web Developer<FlashSpan> | </FlashSpan></h4>
+            <h4>I'm a Web Developer<FlashSpan>| </FlashSpan></h4>
         </header>
 
         <article id='aboutMe'>
-            <p>I'm a React-focused Web Developer (MERN-Stack) with some experience in Python. I got my first taste of code with a 3 month Android App development Bootcamp back in 2019 but recently received my <a href="Thelonercoderportfolio/imgs/NucampCert.pdf" target="_blank"> certification from Nucamp </a> (for Full Stack Web Development).</p>
+            <p id="topPara">I'm a React-focused Web Developer (MERN-Stack) with some experience in Python. I got my first taste of code with a 3 month Android App development Bootcamp back in 2019 but recently received my <a href="Thelonercoderportfolio/imgs/NucampCert.pdf" target="_blank"> certification from Nucamp </a> (for Full Stack Web Development).</p>
 
             <p>
               My projects are passion-focused, pertaining to immersive technologies, exoplanets/space, entrepreneurship, learning languages, and music.
