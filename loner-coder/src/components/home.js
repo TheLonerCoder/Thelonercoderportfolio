@@ -36,7 +36,7 @@ const bodyStyling = {
   backgroundImage: 'url(Thelonercoderportfolio/imgs/space.webp)',
   backgroundColor: 'rgba(0, 0, 0, 0.8)',
   backgroundBlendMode: 'overlay',
-  backgroundSize: "contain",
+  backgroundSize: "cover",
   backgroundRepeat: "no-repeat"
 }
 
