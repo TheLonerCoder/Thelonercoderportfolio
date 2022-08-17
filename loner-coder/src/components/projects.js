@@ -133,8 +133,15 @@ function Projects() {
     const [previmage, setprevimage] = useState();
     const [projectTitle, setprojectTitle] = useState('Project Highlights');
     const [projectVisible, setprojectVisible] = useState(hideProjects);
+
+    const [projectSwitch, setProject] = useState();
+    const [projectID, setProjectID] = useState();
+    const [numValue, changeValue] = useState();
     // const [highlightedProject, sethighlightedProject] = useState(null);
     // const [selectedProject, setselectedProject] = useState();
+
+    
+    let positionArray = ['ftf', 'vrworld', 'solo', 'worldla'];
 
 
 // ? Pulls external data from an Object and converts it to JSX
@@ -142,6 +149,7 @@ function Projects() {
         // if (e.target.id === projectObject[e.target.id]) {
             
         // }
+        
         let idNum = e.currentTarget.id;
 
         titleChange(projectObject[idNum].name);
@@ -150,6 +158,15 @@ function Projects() {
         setcodebase(projectObject[idNum].codebase);
         setprevimage(projectObject[idNum].prev);
         setprojectVisible(null);
+
+        console.log(`Before1 ${numValue}`);
+        
+        // ? Find the position in the project and change it
+        changeValue(positionArray.indexOf(idNum) + 1);
+        console.log(`Before2 ${numValue}`);
+            // console.log(`projectID: ${projectSwitch}`);
+
+    
         // sethighlightedProject(highlightedProjects);
         // setselectedProject(idNum.style = {tested});
         
@@ -171,6 +188,27 @@ function Projects() {
 
     }
 
+
+
+    function changeProjectNext () {
+
+        // setProjectID(positionArray.findIndex(projectSwitch));
+        // ^ finds current position of selected project
+        changeValue(numValue + 1);
+        
+        let position = positionArray[numValue];
+        titleChange(projectObject[position].name);
+        setdescription(projectObject[position].description);
+        setlogo(projectObject[position].logo);
+        setcodebase(projectObject[position].codebase);
+        setprevimage(projectObject[position].prev);
+        // setprojectVisible(null);
+
+    }
+
+
+
+
 // ? Hides concept projects
     const [port, generatePort] = useState({visibility: 'collapse'})
   
@@ -182,7 +220,6 @@ function Projects() {
 
 
     }
-
 
 
 
@@ -219,21 +256,22 @@ function Projects() {
 
     <section className="projectInfo" style={projectVisible}>
     <SlideDiv>
+         <h1 style={{color: 'white'}}>{projectID}</h1>
         
-        <h1>{title}</h1>
+        <h1 id='projectTitles'><span>{title}</span></h1>
         
         <section id='imageDemo'>
             <div id='demo1'>
                 <ArrowFlexContainer>
                     <ArrowBoxFlex>
-                        <ArrowNavigation>
+                        <ArrowNavigation title='previous'>
                             <LeftArrow size={'3rem'}/>
                         </ArrowNavigation>
                     </ArrowBoxFlex>
                         <img src={techlogo} alt="logo" id='techlogo'/>
                     <ArrowBoxFlex>
-                        <ArrowNavigation>
-                            <RightArrow size={'3rem'}/>
+                        <ArrowNavigation title='next' onClick={changeProjectNext}>
+                            <RightArrow size={'3rem'} />
                         </ArrowNavigation>
                     </ArrowBoxFlex>    
                 </ArrowFlexContainer>
