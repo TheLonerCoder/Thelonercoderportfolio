@@ -29,6 +29,12 @@ const FlashSpan = styled.span `
 `
 
 
+const fadeAnimation = keyframes `${fadeIn}`;
+const FadeSpan = styled.span `
+    animation: 2s ${fadeAnimation};
+`
+
+
 // 0.486
 // TODO change to styled component
 // ? Styling
@@ -60,6 +66,11 @@ function Home() {
 
   return (
     <div>
+        <ul id='navIcons'>
+          <li><Link to='navBar' smooth={true} offset={0} duration={500}><BsFillArrowUpSquareFill size={25}/> </Link></li>
+          {/* <li><Link to='ExperienceContainer' smooth={true} offset={450} duration={500}><BsFillArrowDownSquareFill size={25}/></Link></li> */}
+        </ul>
+
       <div className="bodyBackground" style={bodyStyling}>
         <nav id='navBar'>
           <ul>
@@ -69,15 +80,11 @@ function Home() {
           </ul>
         </nav>
 
-        <ul id='navIcons'>
-          <li><Link to='navBar' smooth={true} offset={50} duration={500}><BsFillArrowUpSquareFill size={25}/> </Link></li>
-          {/* <li><Link to='ExperienceContainer' smooth={true} offset={450} duration={500}><BsFillArrowDownSquareFill size={25}/></Link></li> */}
-        </ul>
 
         <header>
             {/* <img src="imgs/man.png" alt="potrait" id='portrait'/> */}
             <img src="Thelonercoderportfolio/imgs/man.png" alt="potrait" id='portrait'/> 
-            <h1>Hello! I'm <span id="name" onMouseEnter={nameChange} onMouseLeave={nameChangeBack}>{currentName}</span></h1> 
+            <h1>Hello! I'm <FadeSpan id="name" onMouseEnter={nameChange} onMouseLeave={nameChangeBack}>{currentName}</FadeSpan></h1> 
             <h4>I'm a Web Developer<FlashSpan>| </FlashSpan></h4>
         </header>
 
