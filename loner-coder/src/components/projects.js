@@ -3,6 +3,7 @@ import '../styles/website.css';
 import { projectObject } from '../data/portfolio-data';
 import { DiBootstrap as Bootstrap, DiCss3 as Css, DiHtml5 as Html5, DiJsBadge as Javascript, DiPython as Python, DiSass as Sass, DiReact, DiGithubBadge as Github } from "react-icons/di";
 import { GoBrowser } from "react-icons/go";
+import { MdNavigateBefore as LeftArrow, MdNavigateNext as RightArrow } from "react-icons/md";
 import '../styles/portfolio.css';
 import '../styles/home.css';
 import styled, { keyframes } from 'styled-components';
@@ -29,6 +30,40 @@ import {fadeInDown, fadeInDownBig, flash, slideInLeft, zoomIn, fadeIn} from 'rea
 // TODO React router
 // TODO
 // TODO
+
+
+// ? Styling
+
+const ArrowFlexContainer = styled.div `
+    display: flex;
+    flex-direction: row;
+`
+
+const ArrowNavigation = styled.div `
+    display: inline-block;
+    ${'' /* height: 185.183px; */}
+
+
+    svg {
+        color: grey;
+
+        &:hover {
+            color: white;
+            cursor: pointer;
+        }
+    }
+`
+
+
+const ArrowBoxFlex = styled.div `
+
+    display: flex;
+    flex-direction: row;
+    ${'' /* justify-content: center; */}
+    align-items: center;
+    height: 185.183px;
+
+`
 
 
 // ? Animations
@@ -189,7 +224,19 @@ function Projects() {
         
         <section id='imageDemo'>
             <div id='demo1'>
-                <img src={techlogo} alt="logo" id='techlogo'/>
+                <ArrowFlexContainer>
+                    <ArrowBoxFlex>
+                        <ArrowNavigation>
+                            <LeftArrow size={'3rem'}/>
+                        </ArrowNavigation>
+                    </ArrowBoxFlex>
+                        <img src={techlogo} alt="logo" id='techlogo'/>
+                    <ArrowBoxFlex>
+                        <ArrowNavigation>
+                            <RightArrow size={'3rem'}/>
+                        </ArrowNavigation>
+                    </ArrowBoxFlex>    
+                </ArrowFlexContainer>
                 <section id='buttonSec'>
                     <a id='demoBtn'><GoBrowser />Live Demo</a>
                     <a id='codebaseBtn'  href={codebase} target="_blank" rel="noreferrer noopener"><Github /> Code Base</a>
