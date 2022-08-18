@@ -189,22 +189,61 @@ function Projects() {
     }
 
 
+let value = numValue;
 
-    function changeProjectNext () {
+    function changeProjectNext (e) {
+        // console.log(`ID:${e.target.id}`)
+        console.log(value)
+        let position = positionArray[value];
 
+        if (e.currentTarget.id === 'next' && value <= 4) {
+
+            value = value + 1;
+    
+            console.log(`before: ${value}`)
+    
+            
+            titleChange(projectObject[position].name);
+            setdescription(projectObject[position].description);
+            setlogo(projectObject[position].logo);
+            setcodebase(projectObject[position].codebase);
+            setprevimage(projectObject[position].prev);
+        } else if (value > 0) {
+            
+            value--;
+            
+            console.log(`prev: ${value}`)
+
+            titleChange(projectObject[position].name);
+            setdescription(projectObject[position].description);
+            setlogo(projectObject[position].logo);
+            setcodebase(projectObject[position].codebase);
+            setprevimage(projectObject[position].prev);
+        }
         // setProjectID(positionArray.findIndex(projectSwitch));
         // ^ finds current position of selected project
-        changeValue(numValue + 1);
-        
-        let position = positionArray[numValue];
-        titleChange(projectObject[position].name);
-        setdescription(projectObject[position].description);
-        setlogo(projectObject[position].logo);
-        setcodebase(projectObject[position].codebase);
-        setprevimage(projectObject[position].prev);
         // setprojectVisible(null);
 
     }
+
+
+    // function changeProjectPrevious () {
+
+    //     // setProjectID(positionArray.findIndex(projectSwitch));
+    //     // ^ finds current position of selected project
+    //     changeValue(numValue - 2);
+        
+    //     console.log(`prev: ${numValue}`)
+
+    //     let position = positionArray[numValue];
+    //     titleChange(projectObject[position].name);
+    //     setdescription(projectObject[position].description);
+    //     setlogo(projectObject[position].logo);
+    //     setcodebase(projectObject[position].codebase);
+    //     setprevimage(projectObject[position].prev);
+    //     // setprojectVisible(null);
+
+    // }
 
 
 
@@ -222,6 +261,10 @@ function Projects() {
     }
 
 
+
+    function idtest (e) {
+        console.log(e.target.id);
+    }
 
 
   return (
@@ -264,13 +307,13 @@ function Projects() {
             <div id='demo1'>
                 <ArrowFlexContainer>
                     <ArrowBoxFlex>
-                        <ArrowNavigation title='previous'>
+                        <ArrowNavigation title='previous' onClick={changeProjectNext} id="previous">
                             <LeftArrow size={'3rem'}/>
                         </ArrowNavigation>
                     </ArrowBoxFlex>
                         <img src={techlogo} alt="logo" id='techlogo'/>
                     <ArrowBoxFlex>
-                        <ArrowNavigation title='next' onClick={changeProjectNext}>
+                        <ArrowNavigation title='next' onClick={changeProjectNext} id="next">
                             <RightArrow size={'3rem'} />
                         </ArrowNavigation>
                     </ArrowBoxFlex>    
