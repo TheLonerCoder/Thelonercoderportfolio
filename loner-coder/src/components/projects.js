@@ -8,6 +8,7 @@ import '../styles/portfolio.css';
 import '../styles/home.css';
 import styled, { keyframes } from 'styled-components';
 import {fadeInDown, fadeInDownBig, flash, slideInLeft, zoomIn, fadeIn} from 'react-animations';
+import { Link } from 'react-scroll';
 
 
 
@@ -284,11 +285,11 @@ let value = numValue;
     <div className='homeProjects'>
         <h2>{projectTitle}</h2>
         <section id='imageBox'>
-            <a  id='ftf' onClick={renderData}><img src="Thelonercoderportfolio/imgs/Forge-the-Fort.jpg" alt="" className='placeholders'/></a>
-            <a id='vrworld' onClick={renderData}><img src="Thelonercoderportfolio/imgs/VR-WORLD.jpg" alt=""/></a>
-            <a id='solo' onClick={renderData}><img src="Thelonercoderportfolio/imgs/solo.jpg" alt=""/></a>
-            <a id='worldla' onClick={renderData}><img src="Thelonercoderportfolio/imgs/worlda-green.jpg" alt=""/></a>
-            <ZoomDiv style={port}><a id='concepts'><img src="Thelonercoderportfolio/imgs/im-here.png" alt="" id='imHere'/></a></ZoomDiv>
+            <Link  id='ftf' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/Forge-the-Fort.jpg" alt="" className='placeholders'/></Link>
+            <Link id='vrworld' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/VR-WORLD.jpg" alt=""/></Link>
+            <Link id='solo' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/solo.jpg" alt=""/></Link>
+            <Link id='worldla' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/worlda-green.jpg" alt=""/></Link>
+            <ZoomDiv style={port}><Link id='concepts' to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/im-here.png" alt="" id='imHere'/></Link></ZoomDiv>
         </section>
 
         <button id='portBtn' onClick={fullPort}>Full Porfolio</button>
@@ -296,6 +297,7 @@ let value = numValue;
         </div>
 
 
+    <div id='scrollTo'></div>
 
     <section className="projectInfo" style={projectVisible}>
     <SlideDiv>
