@@ -12,13 +12,30 @@ import {fadeInDown} from 'react-animations';
   
 // }
 
+// ? Styling
+const bodyStyling = {
+  // backgroundImage: 'url(Thelonercoderportfolio/imgs/space2.jpg)',
+  // backgroundColor: 'rgba(0, 0, 0, 0.8)',
+  backgroundColor: 'rgba(0, 0, 0, 1)',
+  backgroundBlendMode: 'overlay',
+  backgroundSize: "contain",
+  // backgroundRepeat: "no-repeat"
+}
+
+
+const transBg = {
+  backgroundColor: 'rgba(0, 0, 0, 0)',
+}
+
+
+
 
 
 function Journey() {
   return (
-    <div id='ExperienceContainer'>
+    <div id='ExperienceContainer' style={bodyStyling}>
       <h2>My Experiences</h2>
-      <article id='journeySection'>
+      <article id='journeySection' style={transBg}>
 
 
       <section id='journey1'>

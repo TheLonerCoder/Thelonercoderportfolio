@@ -11,6 +11,7 @@ import Home from './home';
 import Journey from './journey';
 import Portfolio from './portfolio';
 import ErrorPage from './error';
+import Testing from './testing';
 
 
 
@@ -33,6 +34,8 @@ function Navbar () {
                 <Link to='/'>Home</Link>
                 {/* <Link to='/journey'>Journey</Link> */}
                 <Link to='/portfolio'>Portfolio</Link>
+
+                <Link to='/testing'>test</Link>
                 {/* {profileArray.map(item => {
                     return (<Link to='/portfolio/:{item}'>{item}</Link>)
                 })} */}
@@ -45,6 +48,8 @@ function Navbar () {
                 <Route path='/portfolio' element={<Portfolio />}/>
                 {/* <Route path='*' element={<ErrorPage />}/> */}
                 <Route path='*' element={<Navigate to='/'/> }/>
+
+                <Route path='/testing' element={<Testing />}/>
                 {/* {profileArray.map(item => {
                     return (<Route path='/por' element={<Portfolio/>}>{item}</Route>)
                 })} */}

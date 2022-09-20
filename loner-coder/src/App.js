@@ -25,6 +25,9 @@ function App() {
       {/* <header>
         <Navbar />
       </header>  */}
+      
+      {/* <Navbar /> */}
+      
       <Home  />
     </div>
   );

@@ -11,7 +11,7 @@
 }
 
 #aboutMe {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 #aboutMe #topPara {
@@ -139,10 +139,6 @@ button {
 
 #resume svg {
   margin-right: 5px;
-}
-
-#navBar:hover {
-  cursor: pointer;
 }
 
 .homeProjects {

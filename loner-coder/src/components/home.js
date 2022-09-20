@@ -39,8 +39,9 @@ const FadeSpan = styled.span `
 // TODO change to styled component
 // ? Styling
 const bodyStyling = {
-  backgroundImage: 'url(Thelonercoderportfolio/imgs/space.webp)',
-  backgroundColor: 'rgba(0, 0, 0, 0.8)',
+  // backgroundImage: 'url(Thelonercoderportfolio/imgs/space2.jpg)',
+  // backgroundColor: 'rgba(0, 0, 0, 0.8)',
+  backgroundColor: 'rgba(0, 0, 0, 0.9)',
   backgroundBlendMode: 'overlay',
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat"
@@ -72,7 +73,7 @@ function Home() {
         </ul>
 
       <div className="bodyBackground" style={bodyStyling}>
-        <nav id='navBar'>
+        <nav id='navBar' style={{display: 'none'}}>
           <ul>
             <li><Link to='projectsUrl' smooth={true} offset={50} duration={500}>Projects</Link></li>
             <li><Link to='ExperienceContainer' smooth={true} offset={50} duration={500}>My Journey</Link></li>

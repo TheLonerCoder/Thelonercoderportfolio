@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import '../styles/website.css';
-import { projectObject } from '../data/portfolio-data';
+// import { projectObject } from '../data/portfolio-data';
+import { projectArray } from '../data/portfolio-data-array';
 import { DiBootstrap as Bootstrap, DiCss3 as Css, DiHtml5 as Html5, DiJsBadge as Javascript, DiPython as Python, DiSass as Sass, DiReact, DiGithubBadge as Github } from "react-icons/di";
 import { GoBrowser } from "react-icons/go";
 import { MdNavigateBefore as LeftArrow, MdNavigateNext as RightArrow } from "react-icons/md";
@@ -124,23 +125,7 @@ let tested = {
 
 
 
-function NumberTabs () {
-    return (
-        <div id='numberTabs'>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-            </ul>
-        </div>
-    )
-}
-
-
-
-function Projects() {
+function Testing() {
 
     const [title, titleChange] = useState();
     const [description, setdescription] = useState();
@@ -154,6 +139,9 @@ function Projects() {
     const [projectSwitch, setProject] = useState();
     const [projectID, setProjectID] = useState();
     const [numValue, changeValue] = useState();
+
+    // !
+    const [enumber, setenumber] = useState();
     
     // const [highlightedProject, sethighlightedProject] = useState(null);
     // const [selectedProject, setselectedProject] = useState();
@@ -161,6 +149,7 @@ function Projects() {
     
     let positionArray = ['ftf', 'vrworld', 'solo', 'worldla'];
 
+    let globalEnum;
 
 // ? Pulls external data from an Object and converts it to JSX
     function renderData (e) {
@@ -169,22 +158,30 @@ function Projects() {
         // }
         
         let idNum = e.currentTarget.id;
+        changeValue(idNum);
+        // globalEnum = Number(idNum);
+        let enumbers = Number(idNum);
+        setenumber(enumbers);
 
-        titleChange(projectObject[idNum].name);
-        setdescription(projectObject[idNum].description);
-        setlogo(projectObject[idNum].logo);
-        setcodebase(projectObject[idNum].codebase);
-        setprevimage(projectObject[idNum].prev);
+
+        titleChange(projectArray[enumber].name);
+        setdescription(projectArray[enumber].description);
+        setlogo(projectArray[enumber].logo);
+        setcodebase(projectArray[enumber].codebase);
+        setprevimage(projectArray[enumber].prev);
         setprojectVisible(null);
 
         console.log(`Before1 ${numValue}`);
         
         // ? Find the position in the project and change it
-        changeValue(positionArray.indexOf(idNum) + 1);
+        // changeValue(positionArray.indexOf(idNum) + 1);
+        // !
+        // changeValue(positionArray.indexOf(idNum));
         console.log(`Before2 ${numValue}`);
             // console.log(`projectID: ${projectSwitch}`);
 
-    
+
+
         // sethighlightedProject(highlightedProjects);
         // setselectedProject(idNum.style = {tested});
         
@@ -198,7 +195,77 @@ function Projects() {
 
         
         // ? Converts the techstack data to imported Icon SVGs and the "converter" Object
-        settechstack((projectObject[idNum].tech).map(x => {
+        settechstack((projectArray[idNum].tech).map(x => {
+            // console.log(`${converter[x]}`)
+           return converter[x];
+        }
+        ))
+
+    }
+
+    // ! Switch
+    function renderDataSwitch (e) {
+        // if (e.target.id === projectObject[e.target.id]) {
+            
+        // }
+        
+        let idNum = Number(e.currentTarget.id);
+        // globalEnum = Number(idNum);
+        changeValue(Number(idNum));
+
+
+        let enumbers = Number(idNum);
+        setenumber(enumbers);
+        
+        
+        switch (idNum) {
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+                titleChange(projectArray[idNum].name);
+                setdescription(projectArray[idNum].description);
+                setlogo(projectArray[idNum].logo);
+                setcodebase(projectArray[idNum].codebase);
+                setprevimage(projectArray[idNum].prev);
+                setprojectVisible(null);
+                break;
+            case 'next':
+                // idNum++;
+                changeValue(numValue + 1);
+
+                titleChange(projectArray[numValue].name);
+                setdescription(projectArray[numValue].description);
+                setlogo(projectArray[numValue].logo);
+                setcodebase(projectArray[numValue].codebase);
+                setprevimage(projectArray[numValue].prev);
+
+                console.log('next');
+                console.log(numValue);
+            break;
+            case 'previous':
+                // idNum++;
+                changeValue(numValue - 1);
+
+                titleChange(projectArray[numValue].name);
+                setdescription(projectArray[numValue].description);
+                setlogo(projectArray[numValue].logo);
+                setcodebase(projectArray[numValue].codebase);
+                setprevimage(projectArray[numValue].prev);
+
+
+
+                console.log('previous');
+            break;
+            default:
+                console.log(idNum);
+        }
+        
+
+
+        
+        // ? Converts the techstack data to imported Icon SVGs and the "converter" Object
+        settechstack((projectArray[idNum].tech).map(x => {
             // console.log(`${converter[x]}`)
            return converter[x];
         }
@@ -207,61 +274,28 @@ function Projects() {
     }
 
 
-let value = numValue;
 
-    function changeProjectNext (e) {
-        // console.log(`ID:${e.target.id}`)
-        console.log(value)
-        let position = positionArray[value];
 
-        if (e.currentTarget.id === 'next' && value <= 4) {
 
-            value = value + 1;
-    
-            console.log(`before: ${value}`)
-    
+    // ! ADD
+        function addOne () {
+            // changeValue(numValue + 1);
+            setenumber(enumber + 1);
+            // console.log(`test: ${globalEnum}`)
+            // globalEnum = globalEnum + 1;
+            // console.log(`test2: ${globalEnum}`)
+
+            // renderData();
             
-            titleChange(projectObject[position].name);
-            setdescription(projectObject[position].description);
-            setlogo(projectObject[position].logo);
-            setcodebase(projectObject[position].codebase);
-            setprevimage(projectObject[position].prev);
-        } else if (value > 0) {
-            
-            value--;
-            
-            console.log(`prev: ${value}`)
-
-            titleChange(projectObject[position].name);
-            setdescription(projectObject[position].description);
-            setlogo(projectObject[position].logo);
-            setcodebase(projectObject[position].codebase);
-            setprevimage(projectObject[position].prev);
         }
-        // setProjectID(positionArray.findIndex(projectSwitch));
-        // ^ finds current position of selected project
-        // setprojectVisible(null);
+    // ! Subtract
+        function subtractOne () {
+            // changeValue(numValue - 1);
+            setenumber(enumber - 1);
 
-    }
+            renderData();
 
-
-    // function changeProjectPrevious () {
-
-    //     // setProjectID(positionArray.findIndex(projectSwitch));
-    //     // ^ finds current position of selected project
-    //     changeValue(numValue - 2);
-        
-    //     console.log(`prev: ${numValue}`)
-
-    //     let position = positionArray[numValue];
-    //     titleChange(projectObject[position].name);
-    //     setdescription(projectObject[position].description);
-    //     setlogo(projectObject[position].logo);
-    //     setcodebase(projectObject[position].codebase);
-    //     setprevimage(projectObject[position].prev);
-    //     // setprojectVisible(null);
-
-    // }
+        }
 
 
 
@@ -300,12 +334,12 @@ let value = numValue;
         {/* <HomeProject /> */}
 
     <div className='homeProjects'>
-        <h2 id='portfolioTitle'>{projectTitle}</h2>
+        <h2>{projectTitle}</h2>
         <section id='imageBox'>
-            <Link  id='ftf' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/Forge-the-Fort.jpg" alt="" className='placeholders'/></Link>
-            <Link id='vrworld' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/VR-WORLD.jpg" alt=""/></Link>
-            <Link id='solo' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/solo.jpg" alt=""/></Link>
-            <Link id='worldla' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/worlda-green.jpg" alt=""/></Link>
+            <Link  id='0' onClick={renderDataSwitch} to='scrollTo' smooth={true} offset={0} duration={1000} ><img src="Thelonercoderportfolio/imgs/Forge-the-Fort.jpg" alt="" className='placeholders'/></Link>
+            <Link id='1' onClick={renderDataSwitch} to='scrollTo' smooth={true} offset={0} duration={1000} ><img src="Thelonercoderportfolio/imgs/VR-WORLD.jpg" alt=""/></Link>
+            <Link id='2' onClick={renderDataSwitch} to='scrollTo' smooth={true} offset={0} duration={1000} ><img src="Thelonercoderportfolio/imgs/solo.jpg" alt=""/></Link>
+            <Link id='3' onClick={renderDataSwitch} to='scrollTo' smooth={true} offset={0} duration={1000} ><img src="Thelonercoderportfolio/imgs/worlda-green.jpg" alt=""/></Link>
             <ZoomDiv style={port}><Link id='concepts' to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/im-here.png" alt="" id='imHere'/></Link></ZoomDiv>
         </section>
 
@@ -320,28 +354,27 @@ let value = numValue;
     <SlideDiv>
          <h1 style={{color: 'white'}}>{projectID}</h1>
         
+        <h1>
+        enum : {enumber} <br/>
+        </h1>
+
         <h1 id='projectTitles'><span>{title}</span></h1>
         
         <section id='imageDemo'>
             <div id='demo1'>
-                {/* <ArrowFlexContainer> */}
-                    {/* <ArrowBoxFlex>
-                        <ArrowNavigation title='previous' onClick={changeProjectNext} id="previous">
+                <ArrowFlexContainer>
+                    <ArrowBoxFlex>
+                        <ArrowNavigation title='previous' onClick={renderDataSwitch} id="previous">
                             <LeftArrow size={'3rem'}/>
                         </ArrowNavigation>
-                    </ArrowBoxFlex> */}
-            
-                    {/* <ArrowBoxFlex>
-                        <ArrowNavigation title='next' onClick={changeProjectNext} id="next">
+                    </ArrowBoxFlex>
+                        <img src={techlogo} alt="logo" id='techlogo'/>
+                    <ArrowBoxFlex>
+                        <ArrowNavigation title='next' onClick={renderDataSwitch} id="next">
                             <RightArrow size={'3rem'} />
                         </ArrowNavigation>
-                    </ArrowBoxFlex>     */}
-                {/* </ArrowFlexContainer> */}
-                <div id='tabPics'>
-                    <NumberTabs />
-                    <img src={techlogo} alt="logo" id='techlogo'/>
-                </div>
-
+                    </ArrowBoxFlex>    
+                </ArrowFlexContainer>
                 <section id='buttonSec'>
                     <a id='demoBtn'><GoBrowser />Live Demo</a>
                     <a id='codebaseBtn'  href={codebase} target="_blank" rel="noreferrer noopener"><Github /> Code Base</a>
@@ -389,4 +422,4 @@ let value = numValue;
   )
 }
 
-export default Projects
+export default Testing;
