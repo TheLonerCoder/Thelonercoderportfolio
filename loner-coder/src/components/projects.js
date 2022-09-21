@@ -124,19 +124,27 @@ let tested = {
 
 
 
-function NumberTabs () {
-    return (
-        <div id='numberTabs'>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-            </ul>
-        </div>
-    )
-}
+// function NumberTabs () {
+
+//     function changeProjectButton (e) {
+//         let projectID = e.currentTarget.id;
+
+
+//     }
+
+
+//     return (
+//         <div id='numberTabs'>
+//             <ul>
+//                 <li id='ftf'>1</li>
+//                 <li id='vrworld'>2</li>
+//                 <li id='solo'>3</li>
+//                 <li id='worldla'>4</li>
+//                 <li id='imhere'>5</li>
+//             </ul>
+//         </div>
+//     )
+// }
 
 
 
@@ -160,6 +168,23 @@ function Projects() {
 
     
     let positionArray = ['ftf', 'vrworld', 'solo', 'worldla'];
+
+    function NumberTabs () {
+
+    
+    
+        return (
+            <div id='numberTabs'>
+                <ul>
+                    <li id='ftf' onClick={renderData}>1</li>
+                    <li id='vrworld' onClick={renderData}>2</li>
+                    <li id='solo' onClick={renderData}>3</li>
+                    <li id='worldla' onClick={renderData}>4</li>
+                    <li id='imhere' onClick={renderData}>5</li>
+                </ul>
+            </div>
+        )
+    }
 
 
 // ? Pulls external data from an Object and converts it to JSX
