@@ -66,6 +66,14 @@ const ArrowBoxFlex = styled.div `
 
 `
 
+let blueBackground = {
+    backgroundColor: '#2d9bf5'
+}
+let greyBackground = {
+    backgroundColor: 'rgba(255, 255, 255, 0.3)'
+}
+
+
 
 // ? Animations
 const slideAnimation = keyframes `${slideInLeft}`;
@@ -158,6 +166,8 @@ function Projects() {
     const [previmage, setprevimage] = useState();
     const [projectTitle, setprojectTitle] = useState('Project Highlights');
     const [projectVisible, setprojectVisible] = useState(hideProjects);
+    const [buttonSelected, changeSelected] = useState(greyBackground)
+    const [buttonBG, changeButtonBG] = useState()
 
     const [projectSwitch, setProject] = useState();
     const [projectID, setProjectID] = useState();
@@ -169,31 +179,60 @@ function Projects() {
     
     let positionArray = ['ftf', 'vrworld', 'solo', 'worldla'];
 
+    function buttonProject () {
+
+    }
+
+
     function NumberTabs () {
 
     
     
         return (
-            <div id='numberTabs'>
+            <div className='numberTabs'>
                 <ul>
-                    <li id='ftf' onClick={renderData}>1</li>
-                    <li id='vrworld' onClick={renderData}>2</li>
-                    <li id='solo' onClick={renderData}>3</li>
-                    <li id='worldla' onClick={renderData}>4</li>
-                    <li id='imhere' onClick={renderData}>5</li>
+                    <li onClick={Test}>0</li>
+                    <li className='ftf' onClick={renderData} >1</li>
+                    <li className='vrworld' onClick={renderData} >2</li>
+                    <li className='solo' onClick={renderData} >3</li>
+                    <li className='worldla' onClick={renderData} >4</li>
+                    <li className='imhere' onClick={renderData} >5</li>
                 </ul>
             </div>
         )
     }
 
 
+    function NumberTabsRight () {    
+        return (
+            <div className='numberTabs' id='numberTabsRight'>
+                <ul>
+                    <li onClick={Test}>0</li>
+                    <li className='ftf' onClick={renderData} >1</li>
+                    <li className='vrworld' onClick={renderData} >2</li>
+                    <li className='solo' onClick={renderData} >3</li>
+                    <li className='worldla' onClick={renderData} >4</li>
+                    <li className='imhere' onClick={renderData} >5</li>
+                </ul>
+            </div>
+        )
+    }
+
+    function Test (e) {
+        
+        e.currentTarget.style.backgroundColor = "#2d9bf5";
+
+    }
+
 // ? Pulls external data from an Object and converts it to JSX
     function renderData (e) {
         // if (e.target.id === projectObject[e.target.id]) {
             
         // }
+        // Test();
         
-        let idNum = e.currentTarget.id;
+        let idNum = e.currentTarget.className;
+        changeButtonBG(blueBackground);
 
         titleChange(projectObject[idNum].name);
         setdescription(projectObject[idNum].description);
@@ -201,12 +240,23 @@ function Projects() {
         setcodebase(projectObject[idNum].codebase);
         setprevimage(projectObject[idNum].prev);
         setprojectVisible(null);
-
-        console.log(`Before1 ${numValue}`);
+        // e.currentTarget.style.backgroundColor = "#2d9bf5";
+        e.currentTarget.style = buttonBG;
         
-        // ? Find the position in the project and change it
-        changeValue(positionArray.indexOf(idNum) + 1);
-        console.log(`Before2 ${numValue}`);
+        // e.currentTarget. style.visibility = 'hidden';
+        // console.log(`style: ${e.currentTarget.style.backgroundColor}`)
+        console.log(`style: ${e.currentTarget.style}`)
+        // changeSelected(blueBackground);
+        
+
+        // console.log(`Before1 ${numValue}`);
+        
+        // // ? Find the position in the project and change it
+        // changeValue(positionArray.indexOf(idNum) + 1);
+        // console.log(`Before2 ${numValue}`);
+
+
+
             // console.log(`projectID: ${projectSwitch}`);
 
     
@@ -223,11 +273,11 @@ function Projects() {
 
         
         // ? Converts the techstack data to imported Icon SVGs and the "converter" Object
-        settechstack((projectObject[idNum].tech).map(x => {
-            // console.log(`${converter[x]}`)
-           return converter[x];
-        }
-        ))
+        // settechstack((projectObject[idNum].tech).map(x => {
+        //     // console.log(`${converter[x]}`)
+        //    return converter[x];
+        // }
+        // ))
 
     }
 
@@ -327,11 +377,11 @@ let value = numValue;
     <div className='homeProjects'>
         <h2 id='portfolioTitle'>{projectTitle}</h2>
         <section id='imageBox'>
-            <Link  id='ftf' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/Forge-the-Fort.jpg" alt="" className='placeholders'/></Link>
-            <Link id='vrworld' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/VR-WORLD.jpg" alt=""/></Link>
-            <Link id='solo' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/solo.jpg" alt=""/></Link>
-            <Link id='worldla' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/worlda-green.jpg" alt=""/></Link>
-            <ZoomDiv style={port}><Link id='concepts' to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/im-here.png" alt="" id='imHere'/></Link></ZoomDiv>
+            <Link  className='ftf' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/Forge-the-Fort.jpg" alt="" className='placeholders'/></Link>
+            <Link className='vrworld' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/VR-WORLD.jpg" alt=""/></Link>
+            <Link className='solo' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/solo.jpg" alt=""/></Link>
+            <Link className='worldla' onClick={renderData} to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/worlda-green.jpg" alt=""/></Link>
+            <ZoomDiv style={port}><Link className='concepts' to='scrollTo' smooth={true} offset={0} duration={1000}><img src="Thelonercoderportfolio/imgs/im-here.png" alt="" id='imHere'/></Link></ZoomDiv>
         </section>
 
         <button id='portBtn' onClick={fullPort}>Full Porfolio</button>
@@ -365,6 +415,7 @@ let value = numValue;
                 <div id='tabPics'>
                     <NumberTabs />
                     <img src={techlogo} alt="logo" id='techlogo'/>
+                    <NumberTabsRight  id='mobileTabs'/>            
                 </div>
 
                 <section id='buttonSec'>

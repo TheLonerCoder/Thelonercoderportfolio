@@ -87,6 +87,7 @@ p {
 
 #buttonSec {
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 #demoBtn {
@@ -171,11 +172,11 @@ a {
           align-items: center;
 }
 
-#numberTabs {
+.numberTabs {
   color: white;
 }
 
-#numberTabs ul {
+.numberTabs ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,7 +187,7 @@ a {
   margin-right: 5px;
 }
 
-#numberTabs li {
+.numberTabs li {
   background-color: rgba(255, 255, 255, 0.3);
   color: white;
   margin-bottom: 3px;
@@ -195,7 +196,7 @@ a {
   font-family: "Cabin", sans-serif;
 }
 
-#numberTabs li:hover {
+.numberTabs li:hover {
   background-color: #2d9bf5;
   cursor: pointer;
 }
@@ -211,5 +212,9 @@ a {
   #gridBody #grid2 {
     all: revert;
   }
+}
+
+#numberTabsRight {
+  display: none;
 }
 /*# sourceMappingURL=portfolio.css.map */

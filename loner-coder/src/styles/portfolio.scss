@@ -113,6 +113,7 @@ p  {
 
 #buttonSec {
     margin-top: 20px;
+    margin-bottom: 30px;
     // margin-right: 5px;
     // margin-bottom: 10px;
 }
@@ -227,7 +228,7 @@ a {
 }
 
 
-#numberTabs {
+.numberTabs {
     color: white;
 
 
@@ -309,4 +310,13 @@ a {
         //     }
         // }
     }
+}
+
+#numberTabsRight {
+
+ 
+        display: none;
+        // visibility: collapse;
+
+    
 }
