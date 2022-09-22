@@ -2,6 +2,15 @@ svg {
   margin-right: 5px;
 }
 
+#viteSvg {
+  display: inline-block;
+}
+
+#viteSvg svg {
+  width: 18.7167px;
+  height: 18.7167px;
+}
+
 #sass {
   fill: #cf649a;
 }

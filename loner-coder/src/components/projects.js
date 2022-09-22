@@ -9,6 +9,7 @@ import '../styles/home.css';
 import styled, { keyframes } from 'styled-components';
 import {fadeInDown, fadeInDownBig, flash, slideInLeft, zoomIn, fadeIn} from 'react-animations';
 import { Link } from 'react-scroll';
+import ViteSvg from './other/viteSvg';
 
 
 
@@ -107,7 +108,8 @@ let converter = {
     react: <DiReact id='react' title="React"/>,
     html: <Html5 id='html5' title="Html5"/>,
     javascript: <Javascript id='javascript' title="Javascript"/>,
-    python: <Python id='python' title="Python"/>
+    python: <Python id='python' title="Python"/>,
+    vite: <ViteSvg id='vite' title='Vite'/>
 }
 
 

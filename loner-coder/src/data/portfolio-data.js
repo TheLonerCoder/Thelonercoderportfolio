@@ -21,8 +21,8 @@ export let projectObject = {
         logo: 'Thelonercoderportfolio/imgs/VR-WORLD.jpg',
         prev: 'Thelonercoderportfolio/imgs/progress.png',
         gif: '',
-        description: "A fake landing page for a VR-based company. This company specializes in VR and immersive technology and connects it's userbase to the metaverse.",
-        tech: ['react', 'sass', 'javascript', 'html', 'css'],
+        description: "A fake landing page for a VR-based company. This company specializes in VR and immersive technology and connects it's userbase to the metaverse with music.",
+        tech: ['react', 'vite', 'sass', 'javascript', 'html', 'css'],
         apis: {
             used: false,
         },
