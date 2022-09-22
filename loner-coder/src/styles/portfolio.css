@@ -201,7 +201,23 @@ a {
   cursor: pointer;
 }
 
+#numberTabsRight {
+  display: none;
+}
+
 @media (max-width: 708px) {
+  .App {
+    overflow-x: hidden;
+  }
+  #numberTabsRight {
+    display: inline-block;
+  }
+  #numberTabsRight ul {
+    padding-left: 8px;
+  }
+  .numberTabs {
+    display: none;
+  }
   #gridBody {
     display: block;
     padding: 10px 0;
@@ -212,9 +228,5 @@ a {
   #gridBody #grid2 {
     all: revert;
   }
-}
-
-#numberTabsRight {
-  display: none;
 }
 /*# sourceMappingURL=portfolio.css.map */

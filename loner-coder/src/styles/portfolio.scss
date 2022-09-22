@@ -255,6 +255,11 @@ a {
 }
 
 
+#numberTabsRight {
+    display: none;
+    // visibility: collapse;
+}
+
 // ! Media Queries
 
 @media (max-width: 708px) {
@@ -262,6 +267,22 @@ a {
     // .projectInfo {
     //     padding: 20px 0;
     //    }
+    .App {
+        overflow-x: hidden;
+    }
+
+    #numberTabsRight {
+        display: inline-block;
+
+        ul {
+
+            padding-left: 8px;
+        }
+    }
+
+    .numberTabs {
+        display: none;
+    }
 
 
     #gridBody {
@@ -310,13 +331,7 @@ a {
         //     }
         // }
     }
+
+
 }
 
-#numberTabsRight {
-
- 
-        display: none;
-        // visibility: collapse;
-
-    
-}
