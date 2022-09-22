@@ -273,11 +273,11 @@ function Projects() {
 
         
         // ? Converts the techstack data to imported Icon SVGs and the "converter" Object
-        // settechstack((projectObject[idNum].tech).map(x => {
-        //     // console.log(`${converter[x]}`)
-        //    return converter[x];
-        // }
-        // ))
+        settechstack((projectObject[idNum].tech).map(x => {
+            // console.log(`${converter[x]}`)
+           return converter[x];
+        }
+        ))
 
     }
 
