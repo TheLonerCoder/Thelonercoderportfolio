@@ -19,7 +19,7 @@ export let projectObject = {
     vrworld: {
         name: 'VR World',
         logo: 'Thelonercoderportfolio/imgs/VR-WORLD.jpg',
-        prev: '',
+        prev: 'Thelonercoderportfolio/imgs/progress.png',
         gif: '',
         description: "A fake landing page for a VR-based company. This company specializes in VR and immersive technology and connects it's userbase to the metaverse.",
         tech: ['react', 'sass', 'javascript', 'html', 'css'],
@@ -53,7 +53,7 @@ export let projectObject = {
     worldla: {
         name: 'Worldla',
         logo: 'Thelonercoderportfolio/imgs/worlda-green.jpg',
-        prev: '',
+        prev: 'Thelonercoderportfolio/imgs/worldla-prev.webp',
         gif: '',
         description: "A platform where you can become more aware of how learning a language opens up doors. It'll give resources to learn languages, show you where you can use them, etc.",
         tech: ['react', 'sass', 'javascript', 'html', 'css'],
@@ -70,8 +70,8 @@ export let projectObject = {
 
     imhere: {
         name: "I'm Here",
-        logo: '',
-        prev: '',
+        logo: 'Thelonercoderportfolio/imgs/im-here.png',
+        prev: 'Thelonercoderportfolio/imgs/progress.png',
         gif: '',
         description: "A portal with both a student and teacher can log into and show they're in attendance in their class.",
         tech: ['react', 'bootstrap', 'sass', 'javascript'],
