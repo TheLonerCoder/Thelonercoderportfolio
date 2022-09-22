@@ -6,6 +6,8 @@ import { DiAndroid, DiJavascript1, DiPython, DiReact, DiBootstrap, DiCss3, DiHtm
 import { SiUdemy, SiYoutube, SiPostman, SiExpress, SiMongodb, SiTypescript, SiYarn, SiStyledcomponents } from "react-icons/si";
 import styled, { keyframes } from 'styled-components';
 import {fadeInDown} from 'react-animations';
+import ViteSvg from './other/viteSvg';
+import ViteSvgIcon from './other/viteSvgIcon';
 
 
 // let certClick = {
@@ -96,6 +98,8 @@ function Journey() {
             <h4>Other</h4>
             
             <ul className='skillList'>
+            <li><div className='divIcons'><ViteSvgIcon title='Vite' id='viteIcon'/><p style={{marginTop: '5px'}}>Vite</p></div></li>
+            
             <li><div className='divIcons'><DiGit size={'2rem'} title="Git" id="gitIcon"/> <p style={{marginTop: '0'}}>Git</p></div></li>
 
             <li><div className='divIcons'><SiPostman size={'1.5rem'} title="Postman" id="postmanIcon"/> <p style={{marginTop: '0'}}>Postman</p></div></li>
