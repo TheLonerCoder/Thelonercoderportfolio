@@ -437,6 +437,10 @@ let value = numValue;
                 <div id='grid1'>
                     <h2 className='mainTitles'>About the Project</h2>
                     <p>{description}</p>
+
+                    <div>
+                        <h2 className='mainTitles'>Project Status</h2>
+                    </div>
                 </div>
                 <div id='grid2'>
                     <h2 className='mainTitles'>Technologies Used</h2>
@@ -448,6 +452,10 @@ let value = numValue;
 
                         {techstack}
                     </h1>
+
+                    <div>
+                        <h2 className="mainTitles">APIs Used</h2>
+                    </div>
                 </div>
             </div>
 
