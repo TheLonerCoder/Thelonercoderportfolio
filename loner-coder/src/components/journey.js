@@ -36,7 +36,8 @@ const transBg = {
 function Journey() {
   return (
     <div id='ExperienceContainer' style={bodyStyling}>
-      <h2>My Experiences</h2>
+      {/* <h2>My Experiences</h2> */}
+      <h2>My Experience</h2>
       <article id='journeySection' style={transBg}>
 
 
@@ -165,7 +166,8 @@ function Journey() {
               <Elements  className="vertical-timeline-element--work"
                 contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="2021 - present"
+                // date="2021 - present"
+                date="2021 - 2022"
                 iconStyle={{ background: 'black', color: '#63dcfb' }}
                 icon={<DiReact />}>
                 <h1>Bootcamp</h1>
