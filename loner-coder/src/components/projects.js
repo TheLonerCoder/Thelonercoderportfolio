@@ -344,11 +344,13 @@ let value = numValue;
 
 
 // ? Hides concept projects
-    const [port, generatePort] = useState({visibility: 'collapse'})
+    // const [port, generatePort] = useState({visibility: 'collapse'})
+    const [port, generatePort] = useState({display: 'none'})
   
 
     function fullPort (){
-      generatePort({visibility: 'visible'})
+    //   generatePort({visibility: 'visible'})
+      generatePort({display: 'block'})
 
       setprojectTitle('Portfolio')
 
