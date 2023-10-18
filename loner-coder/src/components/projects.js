@@ -90,7 +90,8 @@ const FlashDiv = styled.div `
 
 const zoomAnimation = keyframes `${zoomIn}`;
 const ZoomDiv = styled.div `
-    animation: 3s ${zoomAnimation}
+    // animation: 3s ${zoomAnimation}
+    animation: 1s ${zoomAnimation}
 `
 
 
